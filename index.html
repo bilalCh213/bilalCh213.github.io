@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,7 +16,7 @@
 <!-- CSS has Overlay Effect and Parallax Effect -->
 <style>
 	.blackoverlay {
-		background-color: rgba(0, 0, 0, 0.4);
+		background-color: rgba(0, 0, 0, 0.8);
 	}
 
 	.redoverlay {
@@ -80,6 +80,39 @@
 
 	.clickable {
 		cursor:pointer; 
+	}
+	
+	.gameTitleSize {
+		width: 40%;
+		height: 40%;
+	}
+	
+	@media only screen and (max-width: 992px) {
+		.gameTitleSize {
+			width: 60%;
+			height: 60%;
+		}
+	}
+	
+	@media only screen and (max-width: 800px) {
+		.gameTitleSize {
+			width: 85%;
+			height: 85%;
+		}
+	}
+	
+	@media only screen and (max-width: 600px) {
+		.gameTitleSize {
+			width: 110%;
+			height: 110%;
+		}
+	}
+	
+	@media only screen and (max-width: 400px) {
+		.gameTitleSize {
+			width: 135%;
+			height: 135%;
+		}
 	}
 </style>
 
@@ -148,7 +181,7 @@
 	<div class="jumbotron jumbotron-fluid text-left imagebg3" style="padding:0px; margin-bottom:0px; color:#ccffff;">
 		<div style="padding:8rem; background-color: #990ddd44;">
 			<div class="container">
-				<h3 class="display-3"><img src="img/antonsTitle.png" width=40% height=40% alt="Antons" /></h3>
+				<h3 class="display-3"><img class="gameTitleSize" src="img/antonsTitle.png" alt="Antons" /></h3>
 				<h4><i>Orbital</i> Tower Defense Game</h4>
 				<button type="button" class="btn btn-lg text-white" style="background-color:#990ddd;" onclick="window.location.href = 'https://bacstudios.itch.io/antons';"><b>Play Here!</b></button>
 			</div>
@@ -158,7 +191,7 @@
 	<div class="jumbotron jumbotron-fluid text-right imagebg2" style="padding:0px; margin-bottom:0px; color:#ffffff;">
 		<div style="padding:8rem; background-color: #1a210244;">
 			<div class="container">
-				<h3 class="display-3"><img src="img/samuraidueltitle.png" width=40% height=40% alt="SamuraiDuel" /></h3>
+				<h3 class="display-3"><img class="gameTitleSize" src="img/samuraidueltitle.png" width=40% height=40% alt="SamuraiDuel" /></h3>
 				<h4>A Pixel Art Hit and Dodge Platformer filled with <i>juice</i></h4>
 				<button type="button" class="btn btn-lg text-white" style="background-color:#6aa100;" onclick="window.location.href = 'https://bacstudios.itch.io/samuraiduel';"><b>Play Here!</b></button>
 			</div>
@@ -168,7 +201,7 @@
 	<div class="jumbotron jumbotron-fluid text-left imagebg4" style="padding:0px; margin-bottom:0px; color:#efe2d2;">
 		<div style="padding:8rem; background-color: #9c4c4644;">
 			<div class="container">
-				<h3 class="display-3"><img src="img/develomaretitle.png" width=40% height=40% alt="Develomare" /></h3>
+				<h3 class="display-3"><img class="gameTitleSize" src="img/develomaretitle.png" width=40% height=40% alt="Develomare" /></h3>
 				<h4>A little experience dedicated to all Game Developers</h4>
 				<button type="button" class="btn btn-lg text-white" style="background-color:#fb922b;" onclick="window.location.href = 'https://bacstudios.itch.io/develomare';"><b>Play Here!</b></button>
 			</div>
@@ -241,7 +274,7 @@
 
 	<div class="jumbotron jumbotron-fluid text-black text-center" style="margin:0px; background-color: #50c575;">
 		<div class="container" style="padding:2rem;">
-			<h5 class="display-4" style="color:#000000"><b>Follow us on <a href="https://bacprogramming.wordpress.com/"  style="color:#002e05;"><i>BACProgramming.wordpress.com</i></a> to be the First one to Play our Games.</b></h5>
+			<h5 class="display-4" style="color:#000000"><b>Follow Us on <a href="https://bacprogramming.wordpress.com/"  style="color:#002e05;"><i style="background-color:#ffffff;">Our Website</i></a> to be the First One to Play our Games.</b></h5>
 		</div>
 	</div>
 	
