@@ -1,23 +1,28 @@
 {
-	"totalElements": 4,
+	"totalElements": 5,
 
 	"title1": "Colerr V2 is RELEASED!",
 	"description1": "It is available on Google Play Store. Click to Download!",
 	"cover1": "https://img.itch.zone/aW1nLzI5MDIxOTgucG5n/original/TA4FKY.png",
 	"link1": "https://play.google.com/store/apps/details?id=com.BACStudios.Colerr",
+	
+	"title2" : "Learn C++ Programming",
+	"description2" : "Learn C++ from our Tutorial Series for Complete Beginners",
+	"cover2" : "https://upload.wikimedia.org/wikipedia/commons/5/5c/Images_200px-ISO_C%2B%2B_Logo_svg.png",
+	"link2" : "https://bacprogramming.wordpress.com/c-programming-series/",
 
-	"title2": "Play Leverage",
-	"description2": "Our First Ludum Dare Entry at LDJam #45. Play in Browser!",
-	"cover2": "https://static.jam.vg/raw/381/72/z/2864d.gif",
-	"link2": "https://ldjam.com/events/ludum-dare/45/leverage-1",
+	"title3": "Play Leverage",
+	"description3": "Our First Ludum Dare Entry at LDJam #45. Play in Browser!",
+	"cover3": "https://static.jam.vg/raw/381/72/z/2864d.gif",
+	"link3": "https://ldjam.com/events/ludum-dare/45/leverage-1",
 
-	"title3": "Follow Us on Twitter",
-	"description3": "",
-	"cover3": "https://pbs.twimg.com/profile_banners/161990068/1577730802/600x200",
-	"link3": "https://twitter.com/BilalBoss213",
-
-	"title4": "Follow Us on Facebook",
+	"title4": "Follow Us on Twitter",
 	"description4": "",
-	"cover4": "https://scontent.fisb6-1.fna.fbcdn.net/v/t1.0-9/80658095_531056264151663_4173558062419804160_o.png?_nc_cat=105&_nc_ohc=aGjLKbi43b4AX-Mio6L&_nc_ht=scontent.fisb6-1.fna&oh=f5afc0fe5b6d1829d00405c4cfc03e4d&oe=5ECF6C80",
-	"link4": "https://www.facebook.com/bacStudios/"
+	"cover4": "https://pbs.twimg.com/profile_banners/161990068/1577730802/600x200",
+	"link4": "https://twitter.com/BilalBoss213",
+
+	"title5": "Follow Us on Facebook",
+	"description5": "",
+	"cover5": "https://scontent.fisb6-1.fna.fbcdn.net/v/t1.0-9/80658095_531056264151663_4173558062419804160_o.png?_nc_cat=105&_nc_ohc=aGjLKbi43b4AX-Mio6L&_nc_ht=scontent.fisb6-1.fna&oh=f5afc0fe5b6d1829d00405c4cfc03e4d&oe=5ECF6C80",
+	"link5": "https://www.facebook.com/bacStudios/"
 }
