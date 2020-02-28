@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700&display=swap');
+
+$mainHeadingFontSize: 3.6vw;
+$headingFontSize: 2.8vw;
+$subtitleHeadingFontSize: 1.6vw;
+
+$coverFontColor: rgb(250, 255, 245);
+
+@mixin backgroundCoverImage($bg) {
+    background-image: $bg;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@mixin flexToCenter($screenHeight, $dir) {//, $bg) {
+    height: $screenHeight;
+    display: flex;
+    flex-direction: $dir;
+    //@include backgroundCoverImage($bg);
+    justify-content: center;
+    align-items: left;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin mainFont() {
+    font-family: 'Noto Sans', ;
+}
+
+.mainFont { @include mainFont(); }
+.heavyMainfont { @include mainFont(); font-weight: 700; }
+
+@mixin anim($anim, $dur, $del) {
+    animation-name: $anim;
+    animation-duration: $dur;
+    animation-delay: $del;
+    animation-fill-mode: both;
+}
+
+.container-fluid {
+    @include backgroundCoverImage((linear-gradient(to left, rgba(0, 255, 0, 0.2), rgba(0, 64, 0, 0.4), rgba(0, 0, 0, 0.8)),
+    url("../img/cover.jpg")));
+}
+
+.container-fluid-inside {
+    @include flexToCenter(100vh, column); //70vh originally; 100vh is TEMP
+    background-blend-mode: darken;
+    .mainHeading {
+        @include mainFont();
+        font-size: $mainHeadingFontSize;
+        font-weight: 700;
+        padding-left: 5vw;
+        margin: 0;
+        color: $coverFontColor;
+        @include anim(fadeInDown, 1.5s, 1s);
+    }
+    .subtitleHeading {
+        @include mainFont();
+        font-size: $subtitleHeadingFontSize;
+        padding-left: 5vw;
+        margin: 0;
+        color: $coverFontColor;
+        @include anim(fadeInDown, 1.5s, 1.5s);
+    }
+    .headingDivider {
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+    }
+}

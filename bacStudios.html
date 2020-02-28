@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Bootstrap Setup in the head tag -->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<link rel="icon" href="assets/img/bacLogoBlack.png">
+
+	<title>BAC Studios Portfolio</title>
+</head>
+
+<!-- WARNING: NO HTML Comments inside the CSS else you will be hitting your HEAD!-->
+<!-- CSS has Overlay Effect and Parallax Effect -->
+<style>
+	.bacfont {
+		font-family: 'Varela Round', sans-serif;
+	}
+
+	.primaryText {
+		font-family: 'Varela Round', sans-serif;
+		color: rgba(0, 255, 0, 1);
+	}
+
+	.secondaryText {
+		font-family: 'Varela Round', sans-serif;
+		color: rgba(255, 40, 40, 1);
+	}
+
+	.blackoverlay {
+		background-color: rgba(0, 0, 0, 0.9);
+	}
+
+	.redoverlay {
+		background-color: rgba(1000, 0, 0, 0.6);
+	}
+
+	.greenoverlay {
+		background-color: rgba(0, 1000, 0, 0.4);
+	}
+
+	.imagebg1 {
+		background-image: linear-gradient(rgba(255, 0, 0, 0.05), rgba(0, 255, 0, 0.05)), url("assets/img/bacCoverDetailAndPattern.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		background-position: center;
+		background-attachment: fixed;
+	}
+
+	.imagebg2 {
+		background-image: linear-gradient(rgba(130, 80, 0, 0.5), rgba(0, 40, 0, 0.5)), url(https://img.itch.zone/aW1hZ2UvMzQ3MTk2LzE3MjM3MTUucG5n/347x500/T%2BazZI.png);
+		background-size: contain, 75%;
+		background-repeat: repeat;
+
+		background-position: center;
+		background-attachment: fixed;
+	}
+
+	.imagebg3 {
+		background-image: linear-gradient(rgba(20, 0, 30, 0.5), rgba(0, 15, 30, 0.5)), url(https://img.itch.zone/aW1hZ2UvMzg3NjIyLzE5MzQ1MjEucG5n/347x500/ZdLwJ4.png);
+		background-size: contain, 75%;
+		background-repeat: repeat;
+
+		background-position: center;
+		background-attachment: fixed;
+	}
+
+	.imagebg4 {
+		background-image: linear-gradient(rgba(100, 50, 0, 0.4), rgba(40, 10, 0, 0.4)), url(https://img.itch.zone/aW1hZ2UvMzE5MDcwLzE1NzMwNzcucG5n/347x500/IMYxD2.png);
+		background-size: contain, 75%;
+		background-repeat: repeat;
+
+		background-position: center;
+		background-attachment: fixed;
+	}
+
+	.imagebg5 {
+		background-image: linear-gradient(rgba(50, 0, 25, 0.75), rgba(35, 20, 0, 0.75)), url(https://img.itch.zone/aW1nLzIyOTI5MjEucG5n/original/HSJm0%2B.png);
+		background-size: contain, 75%;
+		background-repeat: repeat;
+
+		background-position: center;
+		background-attachment: fixed;
+	}
+
+	.imagebg6 {
+		background-image: linear-gradient(rgba(50, 50, 50, 0.75), rgba(0, 0, 0, 0.75)), url(https://img.itch.zone/aW1nLzI5MDIxOTgucG5n/original/TA4FKY.png);
+		background-size: contain, 125%;
+		background-repeat: repeat;
+
+		background-position: center;
+		background-attachment: fixed;
+	}
+
+	.centerwebsite {
+		max-width: 960px;
+		margin: auto;
+	}
+
+	a.deco-none {
+		color: #000000 !important;
+		text-decoration: none;
+	}
+
+	.bg-menu:hover {
+		background-color: #0079C1;
+		color: #FFFFFF;
+	}
+
+	.clickable {
+		cursor: pointer;
+	}
+
+	.responsiveFontSize_3 {
+		font-size: 1.15vw;
+	}
+
+	.responsiveFontSize_4 {
+		font-size: 1.3vw;
+	}
+
+	.responsiveFontSize_5 {
+		font-size: 2vw;
+	}
+
+	.responsiveFontSize_6 {
+		font-size: 2vw;
+	}
+
+	.responsiveFontSize_7 {
+		font-size: 3vw;
+	}
+
+	.responsiveFontSize_8 {
+		font-size: 3.5vw;
+	}
+
+	.responsiveFontSize_9 {
+		font-size: 4vw;
+	}
+
+	.responsiveFontSize_10 {
+		font-size: 4.5vw;
+	}
+
+	@media only screen and (max-device-width: 640px) {
+		.responsiveFontSize_3 {
+		font-size: 3vw;
+	}
+
+	.responsiveFontSize_4 {
+		font-size: 4vw;
+	}
+
+	.responsiveFontSize_5 {
+		font-size: 5vw;
+	}
+
+	.responsiveFontSize_6 {
+		font-size: 6vw;
+	}
+
+	.responsiveFontSize_7 {
+		font-size: 7vw;
+	}
+
+	.responsiveFontSize_8 {
+		font-size: 8vw;
+	}
+
+	.responsiveFontSize_9 {
+		font-size: 9vw;
+	}
+
+	.responsiveFontSize_10 {
+		font-size: 10vw;
+	}
+	}
+
+	#mc_embed_signup {
+		background: #fff;
+		clear: left;
+		font: 14px, 'Varela Round', sans-serif;
+	}
+</style>
+
+<body>
+	<div class="jumbotron jumbotron-fluid text-white text-center imagebg1" style="margin-bottom:0px;">
+		<div class="blackoverlay">
+			<div class="container" style="width: 100vw;">
+				<h2 class="display-2 primaryText responsiveFontSize_10">BAC Studios</h2>
+				<h5><i class="secondaryText responsiveFontSize_5">Bold Aesthetic Creative Studios is an Indie Game Dev Studio by
+						<b>Programmer Cheema</b></i></h5>
+			</div>
+		</div>
+	</div>
+
+	<div class="jumbotron jumbotron-fluid text-white text-center imagebg1" style="margin-bottom:0px;">
+		<div style="padding:8rem;">
+			<div class="container">
+			</div>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-expand-md justify-content-center text-white"
+		style="background-image:linear-gradient(rgba(0,35,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(25,0,0,1));">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link navbar-brand primaryText mx-2 responsiveFontSize_5" href="https://bacprogramming.wordpress.com/">
+					<img src="assets/img/bacLogoBlack.png" width=30px height=30px alt="Logo" />
+					BAC Studios
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link primaryText mx-2 responsiveFontSize_4" href="https://bacprogramming.wordpress.com/contact/">
+					Contact
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link primaryText mx-2 responsiveFontSize_4" href="https://www.patreon.com/bacstudios">
+					Patreon
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link primaryText mx-2 responsiveFontSize_4" href="https://bacstudios.itch.io/">
+					Games (Itch.io)
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link primaryText mx-2 responsiveFontSize_4" href="https://www.youtube.com/channel/UCmL1kMduqjbXpS7s6rGdMHw">
+					YouTube
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link primaryText mx-2 responsiveFontSize_4" href="https://twitter.com/BilalBoss213">
+					Twitter
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link primaryText mx-2 responsiveFontSize_4" href="https://www.facebook.com/bacStudios/">
+					Facebook
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link primaryText mx-2 responsiveFontSize_4" href="https://mailchi.mp/837f596f39fb/bacstudios">
+					Email Subscription
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="row px-0" style="width: 100vw;">
+
+	<div style="width: 100vw;">
+		<div class="imagebg6 text-center" style="color:#ffffff; width: 100vw;">
+			<div style="padding-top:4vw; padding-bottom:4vw; background-color: #00000066; background-size: cover;">
+				<div class="container">
+					<h3 class="display-3 bacfont responsiveFontSize_5">Colerr</h3>
+					<h4 class="bacfont responsiveFontSize_3">Color Twisted Android Game</h4>
+					<button type="button" class="btn btn-lg text-white bacfont responsiveFontSize_4" style="background-color:#000000;"
+						onclick="window.location.href = 'https://play.google.com/store/apps/details?id=com.BACStudios.Colerr';"><b>Play
+							Here!</b></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+	<div class="row px-0">
+
+		<div class="col px-0" style="width: 50vw;">
+			<div class="imagebg5 text-right" style="float: right; color:#ffffaa; width: 50vw;">
+				<div style="padding-top:4vw; padding-bottom:4vw; background-color: #26111c66; background-size: cover;">
+					<div class="container">
+						<h3 class="display-3 bacfont responsiveFontSize_5">Nick Of Time</h3>
+						<h4 class="bacfont responsiveFontSize_3" style="float: right; width: 40vw;">Split Screen Melee Action RPG</h4>
+						<button type="button" class="btn btn-lg text-white bacfont responsiveFontSize_4" style="background-color:#52222c;"
+							onclick="window.location.href = 'https://bacstudios.itch.io/nick-of-time';"><b>Play
+								Here!</b></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col px-0" style="width: 50vw;">
+			<div class="imagebg3 text-left" style="float: left; color :#ccffff; width: 50vw;">
+				<div style="padding-top:4vw; padding-bottom:4vw; background-color: #990ddd66; background-size: cover;">
+					<div class="container">
+						<h3 class="display-3 bacfont responsiveFontSize_5">Antons</h3>
+						<h4 class="bacfont responsiveFontSize_3" style="float: left; width: 40vw;">Orbital Tower Defense Game</h4>
+						<button type="button" class="btn btn-lg text-white bacfont responsiveFontSize_4" style="background-color:#990ddd;"
+							onclick="window.location.href = 'https://bacstudios.itch.io/antons';"><b>Play
+								Here!</b></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="row px-0">
+
+		<div class="col px-0" style="width: 50vw;">
+			<div class="imagebg2 text-right" style="float: right; color:#ffffff; width: 50vw;">
+				<div style="padding-top:4vw; padding-bottom:4vw; background-color: #1a210266;">
+					<div class="container">
+						<h3 class="display-3 bacfont responsiveFontSize_5">Samurai Duel</h3>
+						<h4 class="bacfont responsiveFontSize_3" style="float: right; width: 40vw;">Juicy Hit and Dodge Platformer</h4>
+						<button type="button" class="btn btn-lg text-white bacfont responsiveFontSize_4" style="background-color:#6aa100;"
+							onclick="window.location.href = 'https://bacstudios.itch.io/samuraiduel';"><b>Play
+								Here!</b></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col px-0" style="width: 50vw;">
+			<div class="imagebg4 text-left" style="float: left; color:#fff0cc; width: 50vw;">
+				<div style="padding-top:4vw; padding-bottom:4vw; background-color: #9c4c4666;">
+					<div class="container">
+						<h3 class="display-3 bacfont responsiveFontSize_5">Develomare</h3>
+						<h4 class="bacfont responsiveFontSize_3" style="float: left; width: 40vw;">Experience Dedicated to Game Developers</h4>
+						<button type="button" class="btn btn-lg text-white bacfont responsiveFontSize_4" style="background-color:#dd6f00;"
+							onclick="window.location.href = 'https://bacstudios.itch.io/develomare';"><b>Play
+								Here!</b></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="jumbotron jumbotron-fluid text-black text-center" style="margin:0px; background-color: #001100;">
+		<div class="container" style="padding:2rem;">
+			<h5 class="display-4 bacfont responsiveFontSize_8" style="color:#ffffff">We have accomplished...</h5>
+			<div class="card-group">
+				<div class="card" style="background-color: #ffeeee">
+					<div class="card-body">
+						<h4 class="card-title bacfont responsiveFontSize_5">Published Games</h4>
+						<p class="card-text bacfont responsiveFontSize_4"><a href="https://bacstudios.itch.io/colerr">Colerr</a>, <a
+								href="https://bacstudios.itch.io/leverage">Leverage</a>, <a
+								href="https://bacstudios.itch.io/nick-of-time">Nick Of Time</a>, <a
+								href="https://bacstudios.itch.io/antons">Antons</a>, <a
+								href="https://bacstudios.itch.io/samuraiduel">SamuraiDuel</a>, <a
+								href="https://bacstudios.itch.io/develomare">Develomare</a>, <a
+								href="https://bacstudios.itch.io/fallingbits">FALLINGbits</a>.
+						</p>
+					</div>
+				</div>
+				<div class="card" style="background-color: #eeffee">
+					<div class="card-body">
+						<h4 class="card-title bacfont responsiveFontSize_5">HT GD Member</h4>
+						<p class="card-text bacfont responsiveFontSize_4">A Game Development Club that encourages collaboration and team work. Visit
+							<a href="https://hometeamgamedev.com/">HomeTeamGameDev.com</a> to know more.</p>
+					</div>
+				</div>
+				<div class="card" style="background-color: #ffeeee">
+					<div class="card-body">
+						<h4 class="card-title bacfont responsiveFontSize_5">List of Games, I contributed in</h4>
+						<p class="card-text bacfont responsiveFontSize_4"><a href="https://kornel.itch.io/nethercard-kingdom">Nethercard Kingdom</a>,
+							<a href="https://brianjboucher.itch.io/ghost-rustlers">Ghost Rustlers</a>, <a
+								href="https://pkamat95.itch.io/exit-the-shadow">Exit the Shadow</a>, <a
+								href="https://kornel.itch.io/alien-overrun">Alien Overrun</a>, <a
+								href="https://gamkedo.itch.io/delv">Delv</a>, <a
+								href="https://gamkedo.itch.io/wild-drivers">Wild Drivers</a>, <a
+								href="https://kornel.itch.io/whisperdrift">WhisperDrift</a>.</p>
+					</div>
+				</div>
+				<div class="card" style="background-color: #eeffee">
+					<div class="card-body">
+						<h4 class="card-title bacfont responsiveFontSize_5">Tons of Articles</h4>
+						<p class="card-text bacfont responsiveFontSize_4"><a href="https://bacprogramming.wordpress.com/c-programming-series/">C++
+								Programming Tutorial Series</a>, <a
+								href="https://bacprogramming.wordpress.com/articles-outside/">Fractals with SDL2, SDL2
+								Tutorials</a>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="jumbotron jumbotron-fluid text-black text-center" style="margin:0px; background-color: #110000;">
+		<div class="container" style="padding:2rem;">
+			<h5 class="display-4 bacfont responsiveFontSize_8" style="color:#ffffff">We know...</h5>
+			<div class="card-group">
+				<div class="card" style="background-color: #eeffee">
+					<div class="card-body">
+						<h4 class="card-title bacfont responsiveFontSize_5">Programming Languages</h4>
+						<p class="card-text bacfont responsiveFontSize_4">C++, C#, Vanilla Javascript, Lua, Java, Kotlin</p>
+					</div>
+				</div>
+				<div class="card" style="background-color: #ffeeee">
+					<div class="card-body">
+						<h4 class="card-title bacfont responsiveFontSize_5">SDKs / Frameworks</h4>
+						<p class="card-text bacfont responsiveFontSize_4">SDL2, Box2D, SFML, Love2D, OpenGL, CEGUI</p>
+					</div>
+				</div>
+				<div class="card" style="background-color: #eeffee">
+					<div class="card-body">
+						<h4 class="card-title bacfont responsiveFontSize_5">Game Engines</h4>
+						<p class="card-text bacfont responsiveFontSize_4">Unity, Godot, Gameguru, GDevelop, GameMaker</p>
+					</div>
+				</div>
+				<div class="card" style="background-color: #ffeeee">
+					<div class="card-body">
+						<h4 class="card-title bacfont responsiveFontSize_5">Creative Softwares</h4>
+						<p class="card-text bacfont responsiveFontSize_4">Inkscape, GIMP, Krita, PyxelEdit, Blender, LMMS, Audacity</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="jumbotron jumbotron-fluid text-black text-center" style="margin:0px; background-color: #77ff77;">
+		<div class="container" style="padding:2rem;">
+			<h5 class="display-4 bacfont responsiveFontSize_8" style="color:#000000"><b>Follow Us on <a href="https://bacprogramming.wordpress.com/"
+						style="color:#002e05;"><i style="background-color:#ffffff;">Our Website</i></a> to be the First
+					One to Play our Games.</b></h5>
+		</div>
+	</div>
+
+	<div class="jumbotron jumbotron-fluid text-black bg-light text-left" style="margin-bottom:0px;">
+		<div class="container">
+			<h4 class="display-4 bacfont responsiveFontSize_8">Contact via email</h4>
+			<h5 class="bacfont responsiveFontSize_4"><b>programmercheema@gmail.com</b></h5>
+		</div>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700&display=swap");
+.mainFont {
+  font-family: "Noto Sans";
+}
+
+.heavyMainfont {
+  font-family: "Noto Sans";
+  font-weight: 700;
+}
+
+.container-fluid {
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 255, 0, 0.2)), color-stop(rgba(0, 64, 0, 0.4)), to(rgba(0, 0, 0, 0.8))), url("../img/cover.jpg");
+  background-image: linear-gradient(to left, rgba(0, 255, 0, 0.2), rgba(0, 64, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.container-fluid-inside {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding: 0;
+  margin: 0;
+  background-blend-mode: darken;
+}
+
+.container-fluid-inside .mainHeading {
+  font-family: "Noto Sans";
+  font-size: 3.6vw;
+  font-weight: 700;
+  padding-left: 5vw;
+  margin: 0;
+  color: #fafff5;
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.container-fluid-inside .subtitleHeading {
+  font-family: "Noto Sans";
+  font-size: 1.6vw;
+  padding-left: 5vw;
+  margin: 0;
+  color: #fafff5;
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.container-fluid-inside .headingDivider {
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+}
+/*# sourceMappingURL=style.css.map */
