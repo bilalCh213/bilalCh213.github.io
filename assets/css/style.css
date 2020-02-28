@@ -8,6 +8,44 @@
   font-weight: 700;
 }
 
+.loadingDisplay {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans";
+  font-size: 1.6vw;
+  font-weight: 700;
+  padding-left: auto;
+  padding-right: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
 .container-fluid {
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 255, 0, 0.2)), color-stop(rgba(0, 64, 0, 0.4)), to(rgba(0, 0, 0, 0.8))), url("../img/cover.jpg");
   background-image: linear-gradient(to left, rgba(0, 255, 0, 0.2), rgba(0, 64, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/cover.jpg");
@@ -47,8 +85,8 @@
           animation-name: fadeInDown;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -59,18 +97,18 @@
   padding-left: 5vw;
   margin: 0;
   color: #fafff5;
-  -webkit-animation-name: fadeInDown;
-          animation-name: fadeInDown;
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
 
 .container-fluid-inside .headingDivider {
-  margin-top: 0.5vw;
-  margin-bottom: 0.5vw;
+  margin-top: 0.75vw;
+  margin-bottom: 0.75vw;
 }
 /*# sourceMappingURL=style.css.map */

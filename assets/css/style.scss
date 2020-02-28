@@ -39,6 +39,21 @@ $coverFontColor: rgb(250, 255, 245);
     animation-fill-mode: both;
 }
 
+.loadingDisplay {
+    @include flexToCenter(100vh, column);
+    @include mainFont();
+    font-size: $subtitleHeadingFontSize;
+    font-weight: 700;
+    padding-left: auto;
+    padding-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    @include anim(fadeOut, 1s, 1s);
+}
+
 .container-fluid {
     @include backgroundCoverImage((linear-gradient(to left, rgba(0, 255, 0, 0.2), rgba(0, 64, 0, 0.4), rgba(0, 0, 0, 0.8)),
     url("../img/cover.jpg")));
@@ -54,7 +69,7 @@ $coverFontColor: rgb(250, 255, 245);
         padding-left: 5vw;
         margin: 0;
         color: $coverFontColor;
-        @include anim(fadeInDown, 1.5s, 1s);
+        @include anim(fadeInDown, 1.5s, 2s);
     }
     .subtitleHeading {
         @include mainFont();
@@ -62,10 +77,11 @@ $coverFontColor: rgb(250, 255, 245);
         padding-left: 5vw;
         margin: 0;
         color: $coverFontColor;
-        @include anim(fadeInDown, 1.5s, 1.5s);
+        @include anim(fadeInUp, 1.5s, 2s);
     }
     .headingDivider {
-        margin-top: 0.5vw;
-        margin-bottom: 0.5vw;
+        margin-top: 0.75vw;
+        margin-bottom: 0.75vw;
     }
 }
+  
