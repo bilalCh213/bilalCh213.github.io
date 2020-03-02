@@ -1,11 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700&display=swap");
-.mainFont {
-  font-family: "Noto Sans";
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap");
+.lightMainFont {
+  font-family: "Nunito";
+  font-weight: 300;
 }
 
-.heavyMainfont {
-  font-family: "Noto Sans";
+.mainFont {
+  font-family: "Nunito";
+  font-weight: 400;
+}
+
+.heavyMainFont {
+  font-family: "Nunito";
   font-weight: 700;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .loadingDisplay {
@@ -25,8 +35,8 @@
           align-items: left;
   padding: 0;
   margin: 0;
-  font-family: "Noto Sans";
-  font-size: 1.6vw;
+  font-family: "Nunito";
+  font-size: 1.4rem;
   font-weight: 700;
   padding-left: auto;
   padding-right: auto;
@@ -46,16 +56,226 @@
           animation-fill-mode: both;
 }
 
-.container-fluid {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 255, 0, 0.2)), color-stop(rgba(0, 64, 0, 0.4)), to(rgba(0, 0, 0, 0.8))), url("../img/cover.jpg");
-  background-image: linear-gradient(to left, rgba(0, 255, 0, 0.2), rgba(0, 64, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/cover.jpg");
+.linkHoverAnim {
+  padding: 10px;
+  background-color: rgba(0, 50, 0, 0.6);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.linkHoverAnim:hover {
+  background-color: #003200;
+}
+
+.my-hero {
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 255, 0, 0.1)), color-stop(rgba(0, 64, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.7)), to(black)), url("../img/coverMobile.jpg");
+  background-image: linear-gradient(to left, rgba(0, 255, 0, 0.1), rgba(0, 64, 0, 0.4), rgba(0, 0, 0, 0.7), black), url("../img/coverMobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
-.container-fluid-inside {
-  height: 100vh;
+@media screen and (min-width: 786px) {
+  .my-hero {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 255, 0, 0.1)), color-stop(rgba(0, 64, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.7)), to(black)), url("../img/cover.jpg");
+    background-image: linear-gradient(to left, rgba(0, 255, 0, 0.1), rgba(0, 64, 0, 0.4), rgba(0, 0, 0, 0.7), black), url("../img/cover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  .my-hero-inside {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    padding: 0;
+    margin: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-bottom: 5rem;
+    background-blend-mode: darken;
+  }
+  .my-hero-inside .mainHeading {
+    display: none;
+  }
+  .my-hero-inside .mainHeadingMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0;
+    color: #fafff5;
+    -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .my-hero-inside .subtitleHeading {
+    font-family: "Nunito";
+    font-size: 1rem;
+    margin: 0;
+    color: #fafff5;
+    -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .my-hero-inside .headingDivider {
+    margin-top: 0.75vw;
+    margin-bottom: 0.75vw;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .my-hero-inside {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: left;
+    padding-bottom: 0rem;
+    background-blend-mode: darken;
+  }
+  .my-hero-inside .mainHeadingMobile {
+    display: none;
+  }
+  .my-hero-inside .mainHeading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 3.4rem;
+    margin: 0;
+    color: #fafff5;
+    -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .my-hero-inside .subtitleHeading {
+    font-family: "Nunito";
+    font-size: 1.4rem;
+    margin: 0;
+    color: #fafff5;
+    -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .my-hero-inside .headingDivider {
+    margin-top: 0.75vw;
+    margin-bottom: 0.75vw;
+  }
+}
+
+.heroScrollDownAnim {
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.projectPanel {
+  color: #0a280a;
+  background-color: #c8ffc8;
+}
+
+.projectPanel .projectPanelHeader {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.projectPanel .projectName {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+.projectPanel .projectPanelBox {
+  background-color: #fafff5;
+}
+
+.projectPanel .projectDetails {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.gamePanel {
+  color: #fafff5;
+  background-color: #509650;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,52 +283,182 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 0;
   margin: 0;
-  background-blend-mode: darken;
 }
 
-.container-fluid-inside .mainHeading {
-  font-family: "Noto Sans";
-  font-size: 3.6vw;
-  font-weight: 700;
-  padding-left: 5vw;
-  margin: 0;
+.gamePanel .gameName {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+.gamePanel .gameDetails {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.mainBtn {
   color: #fafff5;
-  -webkit-animation-name: fadeInDown;
-          animation-name: fadeInDown;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  background-color: #0a280a;
 }
 
-.container-fluid-inside .subtitleHeading {
-  font-family: "Noto Sans";
-  font-size: 1.6vw;
-  padding-left: 5vw;
-  margin: 0;
+.mainBtn:hover {
+  color: white;
+  background-color: black;
+}
+
+.projectMobImgHover {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.projectMobImgHover:hover {
+  -webkit-transform: scale(2) rotateY(2deg) rotateX(-1deg) rotateZ(2deg);
+          transform: scale(2) rotateY(2deg) rotateX(-1deg) rotateZ(2deg);
+}
+
+.antonsCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.25)), color-stop(rgba(0, 0, 0, 0.25)), color-stop(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1hZ2UvMzg3NjIyLzMwNDU4NTguZ2lm/original/Pp3ROm.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1hZ2UvMzg3NjIyLzMwNDU4NTguZ2lm/original/Pp3ROm.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: center;
+}
+
+.antonsCover .gamePanelBox {
   color: #fafff5;
-  -webkit-animation-name: fadeInUp;
-          animation-name: fadeInUp;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  background-color: rgba(5, 10, 20, 0.75);
 }
 
-.container-fluid-inside .headingDivider {
-  margin-top: 0.75vw;
-  margin-bottom: 0.75vw;
+.antonsCover .mainBtn {
+  color: #fafff5;
+  background-color: #003278;
+}
+
+.antonsCover .mainBtn:hover {
+  color: white;
+  background-color: black;
+}
+
+.nickoftimeCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.25)), color-stop(rgba(0, 0, 0, 0.25)), color-stop(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.9))), url("https://bacprogramming.files.wordpress.com/2019/10/story2twitter.gif?w=672&zoom=2");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.9)), url("https://bacprogramming.files.wordpress.com/2019/10/story2twitter.gif?w=672&zoom=2");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: center;
+}
+
+.nickoftimeCover .gamePanelBox {
+  color: #fafff5;
+  background-color: rgba(20, 5, 10, 0.75);
+}
+
+.nickoftimeCover .mainBtn {
+  color: #fafff5;
+  background-color: #8c0032;
+}
+
+.nickoftimeCover .mainBtn:hover {
+  color: white;
+  background-color: black;
+}
+
+.leverageCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.25)), color-stop(rgba(0, 0, 0, 0.25)), color-stop(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1hZ2UvNDk1MzEzLzI1NjQzMjQuZ2lm/original/BaR86T.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1hZ2UvNDk1MzEzLzI1NjQzMjQuZ2lm/original/BaR86T.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: center;
+}
+
+.leverageCover .gamePanelBox {
+  color: #fafff5;
+  background-color: rgba(5, 25, 20, 0.75);
+}
+
+.leverageCover .mainBtn {
+  color: #fafff5;
+  background-color: #007882;
+}
+
+.leverageCover .mainBtn:hover {
+  color: white;
+  background-color: black;
+}
+
+.htgdDetails {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.nethercardKingdomCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.8)), to(black)), url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/original/y61%2FLZ.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), black), url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/original/y61%2FLZ.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: center;
+}
+
+.ghostRustlersCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.8)), to(black)), url("https://img.itch.zone/aW1nLzI2NTA1NjYuZ2lm/original/l9jsIz.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), black), url("https://img.itch.zone/aW1nLzI2NTA1NjYuZ2lm/original/l9jsIz.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: center;
+}
+
+.exitTheShadowCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.8)), to(black)), url("https://img.itch.zone/aW1nLzIyMTUxNzUuZ2lm/original/PccvAh.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), black), url("https://img.itch.zone/aW1nLzIyMTUxNzUuZ2lm/original/PccvAh.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: center;
+}
+
+.alienOverrunCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.8)), to(black)), url("https://img.itch.zone/aW1nLzIxNjMzOTMuZ2lm/original/xIo8Ga.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), black), url("https://img.itch.zone/aW1nLzIxNjMzOTMuZ2lm/original/xIo8Ga.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: center;
+}
+
+.delvCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.8)), to(black)), url("https://img.itch.zone/aW1nLzIwNTQ5NzUuZ2lm/original/m%2FTIZA.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), black), url("https://img.itch.zone/aW1nLzIwNTQ5NzUuZ2lm/original/m%2FTIZA.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: center;
+}
+
+.wildDriversCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.8)), to(black)), url("https://img.itch.zone/aW1nLzIwMzUzMDMuZ2lm/original/OjKhZV.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), black), url("https://img.itch.zone/aW1nLzIwMzUzMDMuZ2lm/original/OjKhZV.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: center;
+}
+
+.whisperdriftCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.8)), to(black)), url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/original/H%2FUfjI.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), black), url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/original/H%2FUfjI.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: center;
 }
 /*# sourceMappingURL=style.css.map */

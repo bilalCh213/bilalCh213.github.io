@@ -1,24 +1,32 @@
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap');
 
-$mainHeadingFontSize: 3.6vw;
-$headingFontSize: 2.8vw;
-$subtitleHeadingFontSize: 1.6vw;
+$mainHeadingFontSize: 3.4rem;
+$subtitleHeadingFontSize: 1.4rem;
 
-$coverFontColor: rgb(250, 255, 245);
+$headingFontSize: 2.8rem;
+$subheadingFontSize: 2.2rem;
+$paragraphFontSize: 1.0rem;
+
+$mobileFontDifference: 0.4rem;
+
+$whiteColor: rgb(250, 255, 245);
+$mainDarkColor: rgb(10, 40, 10);
+$projectPanelColor: rgb(200, 255, 200);
+$gamePanelColor: rgb(80, 150, 80);
 
 @mixin backgroundCoverImage($bg) {
     background-image: $bg;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-position: center;
 }
 
-@mixin flexToCenter($screenHeight, $dir) {//, $bg) {
+@mixin flexToCenter($screenHeight, $dir) {
     height: $screenHeight;
     display: flex;
     flex-direction: $dir;
-    //@include backgroundCoverImage($bg);
     justify-content: center;
     align-items: left;
     padding: 0;
@@ -26,17 +34,24 @@ $coverFontColor: rgb(250, 255, 245);
 }
 
 @mixin mainFont() {
-    font-family: 'Noto Sans', ;
+    font-family: 'Nunito', ;
 }
 
-.mainFont { @include mainFont(); }
-.heavyMainfont { @include mainFont(); font-weight: 700; }
+.lightMainFont { @include mainFont(); font-weight: 300; }
+.mainFont { @include mainFont(); font-weight: 400; }
+.heavyMainFont { @include mainFont(); font-weight: 700; }
 
 @mixin anim($anim, $dur, $del) {
+    
     animation-name: $anim;
     animation-duration: $dur;
     animation-delay: $del;
     animation-fill-mode: both;
+    
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .loadingDisplay {
@@ -54,34 +69,296 @@ $coverFontColor: rgb(250, 255, 245);
     @include anim(fadeOut, 1s, 1s);
 }
 
-.container-fluid {
-    @include backgroundCoverImage((linear-gradient(to left, rgba(0, 255, 0, 0.2), rgba(0, 64, 0, 0.4), rgba(0, 0, 0, 0.8)),
-    url("../img/cover.jpg")));
+.linkHoverAnim
+{
+    padding: 10px;
+    background-color: rgba(0, 50, 0, 0.6);
+    transition: 0.25s;
+    &:hover {
+        background-color: rgba(0, 50, 0, 1.0);
+    }
 }
 
-.container-fluid-inside {
-    @include flexToCenter(100vh, column); //70vh originally; 100vh is TEMP
-    background-blend-mode: darken;
-    .mainHeading {
-        @include mainFont();
-        font-size: $mainHeadingFontSize;
-        font-weight: 700;
-        padding-left: 5vw;
-        margin: 0;
-        color: $coverFontColor;
-        @include anim(fadeInDown, 1.5s, 2s);
-    }
-    .subtitleHeading {
-        @include mainFont();
-        font-size: $subtitleHeadingFontSize;
-        padding-left: 5vw;
-        margin: 0;
-        color: $coverFontColor;
-        @include anim(fadeInUp, 1.5s, 2s);
-    }
-    .headingDivider {
-        margin-top: 0.75vw;
-        margin-bottom: 0.75vw;
+.my-hero {
+    @include backgroundCoverImage((linear-gradient(to left,
+        rgba(0, 255, 0, 0.1), rgba(0, 64, 0, 0.4), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1.0)),
+    url("../img/coverMobile.jpg")));
+    background-attachment: fixed;
+    @include anim(fadeIn, 1s, 2s);
+}
+
+@media screen and (min-width: 786px) {
+    .my-hero {
+        @include backgroundCoverImage((linear-gradient(to left,
+        rgba(0, 255, 0, 0.1), rgba(0, 64, 0, 0.4), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1.0)),
+        url("../img/cover.jpg")));
+        background-attachment: fixed;
+        @include anim(fadeIn, 1s, 2s);
     }
 }
-  
+
+@media screen and (min-width: 0px) {
+    .my-hero-inside {
+        @include flexToCenter(100vh, column);
+        justify-content: flex-end;
+        padding-bottom: 5rem;
+        background-blend-mode: darken;
+        .mainHeading {
+            display: none;
+        }
+        .mainHeadingMobile {
+            display: flex;
+            @include mainFont();
+            font-weight: 700;
+            font-size: $mainHeadingFontSize - $mobileFontDifference;
+            margin: 0;
+            color: $whiteColor;
+            @include anim(fadeInDown, 1.5s, 2s);
+        }
+        .subtitleHeading {
+            @include mainFont();
+            font-size: $subtitleHeadingFontSize - $mobileFontDifference;;
+            margin: 0;
+            color: $whiteColor;
+            @include anim(fadeInUp, 1.5s, 2s);
+        }
+        .headingDivider {
+            margin-top: 0.75vw;
+            margin-bottom: 0.75vw;
+        }
+    }
+}
+
+@media screen and (min-width: 786px) {
+    .my-hero-inside {
+        @include flexToCenter(100vh, column);
+        justify-content: center;
+        align-items: left;
+        padding-bottom: 0rem;
+        background-blend-mode: darken;
+        .mainHeadingMobile {
+            display: none;
+        }
+        .mainHeading {
+            display: flex;
+            @include mainFont();
+            font-weight: 700;
+            font-size: $mainHeadingFontSize;
+            margin: 0;
+            color: $whiteColor;
+            @include anim(fadeInDown, 1.5s, 2s);
+        }
+        .subtitleHeading {
+            @include mainFont();
+            font-size: $subtitleHeadingFontSize;
+            margin: 0;
+            color: $whiteColor;
+            @include anim(fadeInUp, 1.5s, 2s);
+        }
+        .headingDivider {
+            margin-top: 0.75vw;
+            margin-bottom: 0.75vw;
+        }
+    }
+}
+
+.heroScrollDownAnim {
+    @include anim(fadeInDown, 3s, 4s);
+}
+
+.projectPanel {
+    color: $mainDarkColor;
+    background-color: $projectPanelColor;
+
+    .projectPanelHeader {
+        @include mainFont();
+        font-weight: 700;
+        font-size: $headingFontSize;
+        text-align: center;
+    }
+
+    .projectName {
+        @include mainFont();
+        font-weight: 400;
+        font-size: $subheadingFontSize;
+    }
+
+    .projectPanelBox {
+        background-color: $whiteColor;
+    }
+
+    .projectDetails {
+        @include mainFont();
+        font-weight: 400;
+        font-size: $paragraphFontSize;
+    }
+}
+
+.gamePanel {
+    color: $whiteColor;
+    background-color: $gamePanelColor;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+
+    .gameName {
+        @include mainFont();
+        font-weight: 400;
+        font-size: $subheadingFontSize;
+    }
+
+    .gameDetails {
+        @include mainFont();
+        font-weight: 400;
+        font-size: $paragraphFontSize;
+    }
+}
+
+.mainBtn {
+    color: $whiteColor;
+    background-color: $mainDarkColor;
+
+    &:hover {
+        color: white;
+        background-color: black;
+    }
+}
+
+.projectMobImgHover
+{
+    transition: 0.25s;
+    &:hover {
+        transform: scale(2) rotateY(2deg) rotateX(-1deg) rotateZ(2deg);
+    }
+}
+
+.antonsCover
+{
+    @include backgroundCoverImage((linear-gradient(to top,
+        rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.9)),
+    url("https://img.itch.zone/aW1hZ2UvMzg3NjIyLzMwNDU4NTguZ2lm/original/Pp3ROm.gif")));
+
+    .gamePanelBox {
+        color: $whiteColor;
+        background-color: rgba(5, 10, 20, 0.75);
+    }
+
+    .mainBtn {
+        color: $whiteColor;
+        background-color: rgb(0, 50, 120);
+
+        &:hover {
+            color: white;
+            background-color: black;
+        }
+    }
+}
+
+.nickoftimeCover
+{
+    @include backgroundCoverImage((linear-gradient(to top,
+    rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.9)),
+    url("https://bacprogramming.files.wordpress.com/2019/10/story2twitter.gif?w=672&zoom=2")));
+
+    .gamePanelBox {
+        color: $whiteColor;
+        background-color: rgba(20, 5, 10, 0.75);
+    }
+
+    .mainBtn {
+        color: $whiteColor;
+        background-color: rgb(140, 0, 50);
+
+        &:hover {
+            color: white;
+            background-color: black;
+        }
+    }
+}
+
+.leverageCover
+{
+    @include backgroundCoverImage((linear-gradient(to top,
+        rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.9)),
+    url("https://img.itch.zone/aW1hZ2UvNDk1MzEzLzI1NjQzMjQuZ2lm/original/BaR86T.gif")));
+
+    .gamePanelBox {
+        color: $whiteColor;
+        background-color: rgba(5, 25, 20, 0.75);
+    }
+
+    .mainBtn {
+        color: $whiteColor;
+        background-color: rgb(0, 120, 130);
+
+        &:hover {
+            color: white;
+            background-color: black;
+        }
+    }
+}
+
+.htgdDetails {
+    @include mainFont();
+    font-weight: 400;
+    font-size: $paragraphFontSize;
+}
+
+.htgdHeader {
+    @include mainFont();
+    font-weight: 700;
+    font-size: $headingFontSize;
+    text-align: center;
+}
+
+.nethercardKingdomCover
+{
+    @include backgroundCoverImage((linear-gradient(to top,
+    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0)),
+    url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/original/y61%2FLZ.gif")));
+}
+
+.ghostRustlersCover
+{
+    @include backgroundCoverImage((linear-gradient(to top,
+    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0)),
+    url("https://img.itch.zone/aW1nLzI2NTA1NjYuZ2lm/original/l9jsIz.gif")));
+}
+
+.exitTheShadowCover
+{
+    @include backgroundCoverImage((linear-gradient(to top,
+    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0)),
+    url("https://img.itch.zone/aW1nLzIyMTUxNzUuZ2lm/original/PccvAh.gif")));
+}
+
+.alienOverrunCover
+{
+    @include backgroundCoverImage((linear-gradient(to top,
+    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0)),
+    url("https://img.itch.zone/aW1nLzIxNjMzOTMuZ2lm/original/xIo8Ga.gif")));
+}
+
+.delvCover
+{
+    @include backgroundCoverImage((linear-gradient(to top,
+    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0)),
+    url("https://img.itch.zone/aW1nLzIwNTQ5NzUuZ2lm/original/m%2FTIZA.gif")));
+}
+
+.wildDriversCover
+{
+    @include backgroundCoverImage((linear-gradient(to top,
+    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0)),
+    url("https://img.itch.zone/aW1nLzIwMzUzMDMuZ2lm/original/OjKhZV.gif")));
+}
+
+.whisperdriftCover
+{
+    @include backgroundCoverImage((linear-gradient(to top,
+    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0)),
+    url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/original/H%2FUfjI.gif")));
+}
