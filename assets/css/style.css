@@ -18,6 +18,22 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  font-family: "Nunito";
+  font-weight: 700;
+  color: #fafff5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: black;
+}
+
+.container-fluid {
+  border-radius: 0px 0px 0px 0px;
+}
+
 .loadingDisplay {
   height: 100vh;
   display: -webkit-box;
@@ -73,8 +89,6 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-position: center;
-  background-attachment: fixed;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -92,7 +106,6 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-position: center;
     background-attachment: fixed;
     -webkit-animation-name: fadeIn;
             animation-name: fadeIn;
@@ -245,6 +258,42 @@ html {
           animation-fill-mode: both;
 }
 
+ul.timeline {
+  font-family: "Nunito";
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline:before {
+  content: ' ';
+  background: #000000;
+  display: inline-block;
+  position: absolute;
+  left: 28px;
+  width: 4px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline > li {
+  font-size: 1rem;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid #000000;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
 .projectPanel {
   color: #0a280a;
   background-color: #c8ffc8;
@@ -327,7 +376,6 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-position: center;
 }
 
 .antonsCover .gamePanelBox {
@@ -351,7 +399,6 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-position: center;
 }
 
 .nickoftimeCover .gamePanelBox {
@@ -375,7 +422,6 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-position: center;
 }
 
 .leverageCover .gamePanelBox {
@@ -399,13 +445,19 @@ html {
   font-size: 1rem;
 }
 
+.htgdHeader {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
 .nethercardKingdomCover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.8)), to(black)), url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/original/y61%2FLZ.gif");
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), black), url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/original/y61%2FLZ.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-position: center;
 }
 
 .ghostRustlersCover {
@@ -414,7 +466,6 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-position: center;
 }
 
 .exitTheShadowCover {
@@ -423,7 +474,6 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-position: center;
 }
 
 .alienOverrunCover {
@@ -432,7 +482,6 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-position: center;
 }
 
 .delvCover {
@@ -441,7 +490,6 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-position: center;
 }
 
 .wildDriversCover {
@@ -450,7 +498,6 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-position: center;
 }
 
 .whisperdriftCover {
@@ -459,6 +506,5 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-position: center;
 }
 /*# sourceMappingURL=style.css.map */
