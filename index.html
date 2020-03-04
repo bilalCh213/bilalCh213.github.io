@@ -62,18 +62,56 @@
   </div>
 
   <div class="container-fluid jumbotron gamePanel m-0 p-5">
-    <div class="container">
-      <h3 class="gameName">I am naturally inclined to <b>create</b> to make Video Games, Applications and Websites!</h3>
-      <div class="container mt-5 mb-5">
+      <div class="container">
         <div class="row">
-          <div class="col-md-6 offset-md-3">
+          <div class="col-md-6">
+            <div class="shadow p-5" style="background-image: linear-gradient(to bottom right, rgb(0, 90, 60), rgb(5, 70, 20));">
+            <h3 class="gameName">"Hire me so that I can <b>develop</b>
+              <b style="color:rgb(160, 255, 180); line-height: 200%;"><br/>> Exciting Video Games</b>
+              <b style="color:rgb(160, 255, 180); line-height: 200%;"><br/>> Neat Android Apps</b>
+              <b style="color:rgb(160, 255, 180); line-height: 200%;"><br/>> Responsive Websites</b></h3>
+              <h3 class="gameName text-right">for you!"</h3>
+              </div>
+              <div class="row m-0 p-0">
+                <div class="col m-0 p-0">
+                  <div class="shadow mt-3 mr-2 p-5" style="background-image: linear-gradient(to bottom right, rgb(0, 20, 0), rgb(40, 80, 40));">
+                    <h3 class="gameName text-center"><i class="icofont-game"></i></h3>
+                    <p class="gameDetails text-center">Games</p>
+                    <h3 class="gameName text-center">7</h3>
+                  </div>
+                </div>
+                <div class="col m-0 p-0">
+                  <div class="shadow mt-3 ml-2 p-5" style="background-image: linear-gradient(to bottom right, rgb(0, 20, 0), rgb(40, 80, 40));">
+                    <h3 class="gameName text-center"><i class="icofont-web"></i></h3>
+                    <p class="gameDetails text-center">Websites</p>
+                    <h3 class="gameName text-center">4</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="row m-0 p-0">
+                <div class="col m-0 p-0">
+                  <div class="shadow mt-3 mr-2 p-5" style="background-image: linear-gradient(to bottom right, rgb(0, 20, 0), rgb(40, 80, 40));">
+                    <h3 class="gameName text-center"><i class="icofont-ui-touch-phone"></i></h3>
+                    <p class="gameDetails text-center">Android</p>
+                    <h3 class="gameName text-center">1</h3>
+                  </div>
+                </div>
+                <div class="col m-0 p-0">
+                  <div class="shadow mt-3 ml-2 p-5" style="background-image: linear-gradient(to bottom right, rgb(0, 20, 0), rgb(40, 80, 40));">
+                    <h3 class="gameName text-center"><i class="icofont-ui-browser"></i></h3>
+                    <p class="gameDetails text-center" style="line-height: 115%;">Visit our Blog for latest updates<br/><button type="button" class="btn mainBtn">Blog Website</button></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="col-md-6 shadow p-5" style="margin-left: auto; margin-right: auto; background-image: linear-gradient(to bottom right, rgb(0, 90, 60), rgb(5, 70, 20));">
             <h4 class="gameName">My Tech Timeline</h4>
             <p class="gameDetails">(This timeline only covers my history with programming and game engines that I used. Infact, it also misses a lot of that too. For example, I learned and/or tried OpenGL, Python and SFML as well.)</p>
             <ul class="timeline">
               <li>
-                <a target="_blank" href="#">MS Powerpoint, FPS Creator, Yoyo's Game Maker, Gamesalad (and some more game engines, trials)</a>
-                <a href="#" class="float-right">Pre 2010</a>
-                <p class="gameDetails" id="timeline0">I used to play around and tinker with all kinds of Drag'n'Drop Softwares
+                <a href="#tm0" id="tm0" onclick="timelineToggler(0)">MS Powerpoint, FPS Creator, Yoyo's Game Maker, Gamesalad (and some more...)</a>
+                <a class="float-right">Pre 2010</a>
+                <p class="gameDetails" id="timeline0" style="display: none;">I used to play around and tinker with all kinds of Drag'n'Drop Softwares
                   and Game Engines out there. I didn't like any of them. They are just not made for me.
                   Infact, I started not liking Game Engines and gradually, ended up hating them. To me,
                   it seems like those engines only gave a limited set of tools and it doesn't feel enough
@@ -83,35 +121,35 @@
                   it because I used to believe that programming is very hard.</p>
               </li>
               <li>
-                <a href="#">Minecraft: Redstones and Command Blocks</a>
-                <a href="#" class="float-right">2010-2015</a>
-                <p class="gameDetails" id="timeline1">Minecraft was everywhere on YouTube. This made me want to try the game out.
+                <a href="#tm1" id="tm1" onclick="timelineToggler(1)">Minecraft: Redstones and Command Blocks</a>
+                <a class="float-right">2010-2015</a>
+                <p class="gameDetails" id="timeline1" style="display: none;">Minecraft was everywhere on YouTube. This made me want to try the game out.
                   It started out as mining, placing the blocks and crafting.
                   But I ended up loving Redstones and later on, Command Blocks.
                   I still consider Minecraft as my favourite game of all times.</p>
               </li>
               <li>
-                <a href="#">HTML, CSS and Javascript (no framework, no canvas)</a>
-                <a href="#" class="float-right">2011</a>
-                <p class="gameDetails" id="timeline2">Somewhere on the Internet, I read that, "Commands that we enter in the
+                <a href="#tm2" id="tm2" onclick="timelineToggler(2)">HTML, CSS and Javascript (no framework, no canvas)</a>
+                <a class="float-right">2011</a>
+                <p class="gameDetails" id="timeline2" style="display: none;">Somewhere on the Internet, I read that, "Commands that we enter in the
                   Minecraft's Command Blocks are similar to programming". This made me
                   want to try learning programming. I searched for the easiest programming language
                   and ended up learning basics of <b>Front End Web Development</b>. That is where my
                   programming journey started out.</p>
               </li>
               <li>
-                <a href="#">Java and JavaFX</a>
-                <a href="#" class="float-right">2011-2012</a>
-                <p class="gameDetails" id="timeline3">"What language is used to make Minecraft?" is what I searched.
+                <a href="#tm3" id="tm3" onclick="timelineToggler(3)">Java and JavaFX</a>
+                <a class="float-right">2011-2012</a>
+                <p class="gameDetails" id="timeline3" style="display: none;">"What language is used to make Minecraft?" is what I searched.
                   Ahh, I regret it. I thought that this is the Ultimate Game Development Language.
                   Little did I know that Java is umm... not for that. <i class="icofont-stuck-out-tongue"></i>
                   But I ended up liking JavaFX. It was actually fun. I really liked the structure of JavaFX
                   and I made 2-3 simple and tiny games with it. At that time, it was a big achievement to me!</p>
               </li>
               <li>
-                <a target="_blank" href="#">C++ (no framework)</a>
-                <a href="#" class="float-right">2012-current</a>
-                <p class="gameDetails" id="timeline4">The HARDCORE language. The GameDev Language. And my favourite language.
+                <a href="#tm4" id="tm4" onclick="timelineToggler(4)">C++ (no framework)</a>
+                <a class="float-right">2012-current</a>
+                <p class="gameDetails" id="timeline4" style="display: none;">The HARDCORE language. The GameDev Language. And my favourite language.
                   This guy rocks! I love those dangling pointers. The thing is, for the first time,
                   I felt like I truly understood how computers work behind the scenes.
                   <br>
@@ -121,9 +159,9 @@
                 </p>
               </li>
               <li>
-                <a href="#">C++ (SDL2 and Box2D)</a>
-                <a href="#" class="float-right">2013-current</a>
-                <p class="gameDetails" id="timeline5">...started learning how the heck can I use graphics and make true video games!
+                <a href="#tm5" id="tm5" onclick="timelineToggler(5)">C++ (SDL2 and Box2D)</a>
+                <a class="float-right">2013-current</a>
+                <p class="gameDetails" id="timeline5" style="display: none;">...started learning how the heck can I use graphics and make true video games!
                   At that time, I have an Android mobile and that device is available to me more
                   than my computer.
                   <br>
@@ -140,9 +178,9 @@
                 </p>
               </li>
               <li>
-                <a href="#">BAC Studios (BAC Programming) Blog</a>
-                <a href="#" class="float-right">2015-current</a>
-                <p  class="gameDetails" id="timeline6">I started blogging where I made a <b>C++ Programming Series</b>. It does not include
+                <a href="#tm6" id="tm6" onclick="timelineToggler(6)">BAC Studios (BAC Programming) Blog</a>
+                <a class="float-right">2015-current</a>
+                <p class="gameDetails" id="timeline6" style="display: none;">I started blogging where I made a <b>C++ Programming Series</b>. It does not include
                   OOP because I got bored of it. I also shared some of my art and updates ofcourse.
                   <br>
                   <br>Thanks to my interesting articles on cplusplus.com from where I get most of my audience
@@ -150,18 +188,18 @@
                   way to bring audience to your blog IMO (wayyy better than SEO or any other tricks).</p>
               </li>
               <li>
-                <a target="_blank" href="#">Lua (Love2D)</a>
-                <a href="#" class="float-right">2015</a>
-                <p class="gameDetails" id="timeline7">Love2D got my attention when I realized that I could easily execute its code directly on
+                <a href="#tm7" id="tm7" onclick="timelineToggler(7)">Lua (Love2D)</a>
+                <a class="float-right">2015</a>
+                <p class="gameDetails" id="timeline7" style="display: none;">Love2D got my attention when I realized that I could easily execute its code directly on
                   mobile via their official Android app. I could also write shaders unlike SDL2.
                   <br>
                   <br>But the Lua language didn't suit me. I am just not used to NOT using semi-colons and
                   brackets at that point. Apart from that, I liked strongly typed languages.</p>
               </li>
               <li>
-                <a href="#">Unity Game Engine</a>
-                <a href="#" class="float-right">2016-current</a>
-                <p class="gameDetails" id="timeline8">My brother was doing BS Computer Science in Capital University of Science and Technology.
+                <a href="#tm8" id="tm8" onclick="timelineToggler(8)">Unity Game Engine</a>
+                <a class="float-right">2016-current</a>
+                <p class="gameDetails" id="timeline8" style="display: none;">My brother was doing BS Computer Science in Capital University of Science and Technology.
                   He doesn't like programming and I helped him on a lot of occasions. Then, he took a course
                   in Game Programming because he knows that he could call me for help as I am super interested
                   in Game Development.
@@ -175,9 +213,9 @@
                   A canvas for a Game Dev where you can develop whatever we can imagine in the form of a Game.</p>
               </li>
               <li>
-                <a href="#">Kotlin</a>
-                <a href="#" class="float-right">2018</a>
-                <p class="gameDetails" id="timeline9">There was this insane hype over developing Android apps in Kotlin at the end of 2017.
+                <a href="#tm9" id="tm9" onclick="timelineToggler(9)">Kotlin</a>
+                <a class="float-right">2018</a>
+                <p class="gameDetails" id="timeline9" style="display: none;">There was this insane hype over developing Android apps in Kotlin at the end of 2017.
                   Ofcourse, it attracted my attention. I always liked the idea of developing my own Android
                   apps and I have tried to do it with Java before but I ended up not liking it. To me,
                   it was just a huge mess.
@@ -187,18 +225,18 @@
                   into Game Development and gradually, Kotlin faded away for me.</p>
               </li>
               <li>
-                <a href="#">Godot Game Engine</a>
-                <a href="#" class="float-right">2019-current</a>
-                <p class="gameDetails" id="timeline10">Godot is the second best thing that happened to me after Unity. Such a compact sized game
+                <a href="#tm10" id="tm10" onclick="timelineToggler(10)">Godot Game Engine</a>
+                <a class="float-right">2019-current</a>
+                <p class="gameDetails" id="timeline10" style="display: none;">Godot is the second best thing that happened to me after Unity. Such a compact sized game
                   engine with Unity-like features that have excellent 2D support and amazing structure to
                   everything.I really liked the concept of nodes. But with that said, I still use Unity
                   for my primary Game Dev. Although, it is still not capable enough like Unity but it is
                   quite easy to see that Godot is only here to get better and better.</p>
               </li>
               <li>
-                <a target="_blank" href="#">Joined HomeTeam GameDev Club</a>
-                <a href="#" class="float-right">2019-current</a>
-                <p class="gameDetails" id="timeline11">I am an MBBS student and don't belong to the field of computers professionally. I am a
+                <a href="#tm11" id="tm11" onclick="timelineToggler(11)">Joined HomeTeam GameDev Club</a>
+                <a class="float-right">2019-current</a>
+                <p class="gameDetails" id="timeline11" style="display: none;">I am an MBBS student and don't belong to the field of computers professionally. I am a
                   self taught game programmer. I always felt like I am not good enough and my society
                   never really liked me as a programmer. They would probably say, 'yeah, cool' when I tell them
                   that I am a programmer. But the reality is that, no one would like me to leave my medical
@@ -225,24 +263,23 @@
                 </p>
               </li>
               <li>
-                <a href="#">Javascript Canvas/WebGL (no framework)</a>
-                <a href="#" class="float-right">2019-current</a>
-                <p class="gameDetails" id="timeline12">In HT GD Club, the members make games in only 2 ways: Unity without using asset store and JS
+                <a href="#tm12" id="tm12" onclick="timelineToggler(12)">Javascript Canvas/WebGL (no framework)</a>
+                <a class="float-right">2019-current</a>
+                <p class="gameDetails" id="timeline12" style="display: none;">In HT GD Club, the members make games in only 2 ways: Unity without using asset store and JS
                   Vanilla Canvas. This is to ensure that members learn generic game development and not confuse
                   themselves into tons of libraries/SDKs/assets. So, I learned it via Chris's Game Programming
                   book and contributed to some of the JS games being developed at that time.</p>
               </li>
               <li>
-                <a href="#">Flutter, Dart</a>
-                <a href="#" class="float-right">2020-current</a>
-                <p class="gameDetails" id="timeline13">Future of Android App Development is Flutter. I am sure of it! I made my <b>BAC Studios App</b> in
+                <a href="#tm13" id="tm13" onclick="timelineToggler(13)">Flutter, Dart</a>
+                <a class="float-right">2020-current</a>
+                <p class="gameDetails" id="timeline13" style="display: none;">Future of Android App Development is Flutter. I am sure of it! I made my <b>BAC Studios App</b> in
                   just 4 days (even that is quite much) without learning Flutter or Dart prior to it. The
                   process is so smooth and hot reloading is such a time saver. Flutter and Dart programming language
                   may look complex at a glance but it is so neat and flexible. The concept of Widgets in Flutter
                   is so well executed. Definitely, it is recommended by me!</p>
               </li>
             </ul>
-          </div>
         </div>
       </div>
     </div>
@@ -618,7 +655,17 @@
     glare: true,
     maxGlare: 0.25,
     scale: 1.5
-  })
+  });
+
+  function timelineToggler(i) {
+    for(let o = 0; o < 14; o++)
+      if(o != i)
+        document.getElementById("timeline" + o.toString())
+          .style.display = "none";
+
+    var tm = document.getElementById("timeline" + i.toString());
+    tm.style.display = tm.style.display == "none" ? "block" : "none";
+  }
 </script>
 
 </html>
