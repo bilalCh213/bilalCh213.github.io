@@ -39,6 +39,7 @@ $gamePanelColor: rgb(80, 150, 80);
 .lightMainFont { @include mainFont(); font-weight: 300; }
 .mainFont { @include mainFont(); font-weight: 400; }
 .heavyMainFont { @include mainFont(); font-weight: 700; }
+.darkText { color: $mainDarkColor; }
 
 @mixin anim($anim, $dur, $del) {
     
@@ -89,6 +90,8 @@ a {
     transition: 0.25s;
     &:hover {
         background-color: rgba(0, 50, 0, 1.0);
+        font-size: 125%;
+        padding: 5px;
     }
 }
 
@@ -175,7 +178,7 @@ a {
 }
 
 .heroScrollDownAnim {
-    @include anim(fadeInDown, 3s, 4s);
+    @include anim(fadeInDown, 3s, 5s);
 }
 
 ul.timeline {
