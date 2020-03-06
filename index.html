@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="width=device-width, initial-scale=1.0, user-scalable=0;" name="viewport">
 
   <title>Bilal Ahmad Cheema</title>
   <meta content="" name="description">
@@ -22,7 +22,6 @@
 </head>
 
 <body>
-  <!--style="overflow: hidden;"> overflow hidden for hidding scrollbars-->
 
   <p class="loadingDisplay">Portfolio is Loading...</p>
 
@@ -33,6 +32,7 @@
           <div class="navbar-nav mr-0 ml-auto">
             <a class="nav-item nav-link active mainFont linkHoverAnim" href="#projects">Projects</a>
             <a class="nav-item nav-link active mainFont linkHoverAnim" href="#about">About</a>
+            <a class="nav-item nav-link active mainFont linkHoverAnim" href="#bacstudios">BAC Studios</a>
             <a class="nav-item nav-link active mainFont linkHoverAnim" href="#htgd">HT GD Club</a>
             <a class="nav-item nav-link active mainFont linkHoverAnim" href="#contact">Contact Me</a>
           </div>
@@ -49,7 +49,7 @@
         <p class="subtitleHeading">Front End Web Developer</p>
         <div class="headingDivider"></div>
         <p style="font-size: 2.0rem; letter-spacing: 0.2rem;">
-        <a class="animated fadeInDown delay-3s" href="mailto:programmercheema@gmail.com" data-toggle="tooltip" title="Email"><i class="icofont-email linkHoverAnim" style="padding: 15px; background-color: white; color: black;"></i></a>
+        <a class="animated fadeInDown delay-3s" href="mailto:programmercheema@gmail.com" data-toggle="tooltip" title="Email"><i class="icofont-email linkHoverAnim callToActionEmailIcon"></i></a>
         <a class="animated fadeInDown delay-3s" href="https://bacprogramming.wordpress.com/" data-toggle="tooltip" title="Wordpress Blog"><i class="icofont-brand-wordpress linkHoverAnim" style="color: #21759b;"></i></a>
         <a class="animated fadeInDown delay-3s" href="https://www.youtube.com/channel/UCmL1kMduqjbXpS7s6rGdMHw/" data-toggle="tooltip" title="YouTube Channel"><i class="icofont-youtube-play linkHoverAnim" style="color: #c4302b;"></i></a>
         <a class="animated fadeInDown delay-3s" href="https://github.com/bilalCh213" data-toggle="tooltip" title="Github"><i class="icofont-github linkHoverAnim" style="color: #28a745;"></i></a>
@@ -65,13 +65,13 @@
     </div>
   </div>
 
-  <div id="projects" class="container-fluid jumbotron projectPanel m-0">
-    <div class="container">
+  <div id="projects" class="container-fluid jumbotron projectPanel">
+    <div class="container mob-noHorizontalGaps">
 
       <h3 class="projectPanelHeader p-5" data-aos="zoom-in">Published Projects</h3>
 
-      <div class="row shadow p-3 mb-5 projectPanelBox" data-aos="zoom-in">
-        <div class="col p-5" data-aos="zoom-in-right">
+      <div class="row p-3 mb-5 mx-auto projectPanelBox" data-aos="zoom-in">
+        <div class="col-sm-12 col-md-6 p-5" data-aos="zoom-in-right">
           <div class="row text-right" style="display: flex; justify-content: flex-end; align-content: flex-end;">
             <h3 class="projectName">Colerr</h3>
             <p class="projectDetails">An <b>Android Game</b> where you have to click the right Word-Color Combination
@@ -83,36 +83,36 @@
             <button type="button" class="btn mainBtn ml-1" onclick="window.location.href = 'https://bacprogramming.wordpress.com/2020/01/23/colerr-v2-is-released-play-it-on-your-phone/'">Blog Post</button>
           </div>
         </div>
-        <div class="col p-5" data-aos="zoom-in-left">
-          <div class="row">
-            <div class="col">
+        <div class="col-sm-12 col-md-6 p-5" data-aos="zoom-in-left">
+          <div class="row mobGroup">
+            <div class="col-md-4 mobGroupPic1">
               <img src="assets/img/projects/colerr1.png" class="img-fluid projectMobImgTilt" alt="Colerr 1">
             </div>
-            <div class="col">
+            <div class="col-md-4 mobGroupPic2">
               <img src="assets/img/projects/colerr2.png" class="img-fluid projectMobImgTilt" alt="Colerr 2">
             </div>
-            <div class="col">
+            <div class="col-md-4 mobGroupPic3">
               <img src="assets/img/projects/colerr3.png" class="img-fluid projectMobImgTilt" alt="Colerr 3">
             </div>
           </div>
         </div>
       </div>
 
-      <div class="row shadow p-3 mb-5  projectPanelBox" data-aos="zoom-in">
-        <div class="col p-5" data-aos="zoom-in-right">
-          <div class="row">
-            <div class="col">
+      <div class="row  p-3 mb-5 mx-auto projectPanelBox" data-aos="zoom-in">
+        <div class="col-sm-12 col-md-6 p-5" data-aos="zoom-in-right">
+          <div class="row mobGroup">
+            <div class="col mobGroupPic1">
               <img src="assets/img/projects/bacstudios1.png" class="img-fluid projectMobImgTilt" alt="BAC Studio App 1">
             </div>
-            <div class="col">
+            <div class="col mobGroupPic2">
               <img src="assets/img/projects/bacstudios2.png" class="img-fluid projectMobImgTilt" alt="BAC Studio App 2">
             </div>
-            <div class="col">
+            <div class="col mobGroupPic3">
               <img src="assets/img/projects/bacstudios3.png" class="img-fluid projectMobImgTilt" alt="BAC Studio App 3">
             </div>
           </div>
         </div>
-        <div class="col p-5" data-aos="zoom-in-left">
+        <div class="col-sm-12 col-md-6 p-5" data-aos="zoom-in-left">
           <div class="row">
             <h3 class="projectName">BAC Studios</h3>
             <p class="projectDetails">Bold Aesthetic Creative Studios is the Indie GameDev Studio of mine and this is
@@ -120,15 +120,15 @@
               elegant manner.</p>
           </div>
           <div class="row" style="display: flex; justify-content: flex-start; align-content: flex-start;">
-            <button type="button" class="btn mainBtn mr-1" onclick="window.location.href = 'https://play.google.com/store/apps/details?id=com.BACStudios.bacstudios'">Install our App <i
+            <button type="button" class="btn mainBtn m-1" onclick="window.location.href = 'https://play.google.com/store/apps/details?id=com.BACStudios.bacstudios'">Install our App <i
                 class="icofont-android-nexus"></i></button>
-            <button type="button" class="btn mainBtn ml-1" onclick="window.location.href = 'https://bacprogramming.wordpress.com/2020/02/21/i-made-an-app-for-bac-studios/'">Blog Post</button>
+            <button type="button" class="btn mainBtn m-1" onclick="window.location.href = 'https://bacprogramming.wordpress.com/2020/02/21/i-made-an-app-for-bac-studios/'">Blog Post</button>
           </div>
         </div>
       </div>
 
-      <div class="row shadow p-3 mb-5  projectPanelBox" data-aos="zoom-in">
-        <div class="col p-5" data-aos="zoom-in-right">
+      <div class="row p-3 mb-5 mx-auto projectPanelBox" data-aos="zoom-in">
+        <div class="col-sm-12 col-md-6 p-5" data-aos="zoom-in-right">
           <div class="row text-right" style="display: flex; justify-content: flex-end; align-content: flex-end;">
             <h3 class="projectName">Mehria Society</h3>
             <p class="projectDetails">Mehria Medical Society Pakistan is non-government, non-political and independent
@@ -141,27 +141,16 @@
             <!--<button type="button" class="btn mainBtn ml-1">Blog Post</button>-->
           </div>
         </div>
-        <div class="col p-5" data-aos="zoom-in-left">
-          <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#mehriaMobile">Mobile</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#mehriaDesktop">Desktop</a></li>
-          </ul>
-          <div class="tab-content">
-            <div id="mehriaMobile" class="container tab-pane active">
-              <div class="row">
-                <div class="col">
-                  <img src="assets/img/projects/mehria1.png" class="img-fluid projectMobImgTilt" alt="Mehria Website 1">
-                </div>
-                <div class="col">
-                  <img src="assets/img/projects/mehria2.png" class="img-fluid projectMobImgTilt" alt="Mehria Website 2">
-                </div>
-                <div class="col">
-                  <img src="assets/img/projects/mehria3.png" class="img-fluid projectMobImgTilt" alt="Mehria Website 3">
-                </div>
-              </div>
+        <div class="col-sm-12 col-md-6 p-5" data-aos="zoom-in-left">
+          <div class="row mobGroup">
+            <div class="col mobGroupPic1">
+              <img src="assets/img/projects/mehria1.png" class="img-fluid projectMobImgTilt" alt="Mehria Website 1">
             </div>
-            <div id="mehriaDesktop" class="container tab-pane">
-              <img src="assets/img/projects/mehriaDesktop.jpg" class="img-fluid" alt="Colerr Start Menu">
+            <div class="col mobGroupPic2">
+              <img src="assets/img/projects/mehria2.png" class="img-fluid projectMobImgTilt" alt="Mehria Website 2">
+            </div>
+            <div class="col mobGroupPic3">
+              <img src="assets/img/projects/mehria3.png" class="img-fluid projectMobImgTilt" alt="Mehria Website 3">
             </div>
           </div>
         </div>
@@ -169,12 +158,12 @@
     </div>
   </div>
 
-  <div class="container-fluid jumbotron gamePanel m-0 p-5 antonsCover">
-    <div class="container">
-      <div class="row shadow p-3 mb-5  gamePanelBox" data-aos="zoom-in">
-        <div class="col p-5" data-aos="zoom-in-right"
+  <div class="container-fluid jumbotron gamePanel antonsCover mob-noHorizontalGaps">
+    <div class="container p-0">
+      <div class="row gamePanelBox" data-aos="zoom-in">
+        <div class="col-sm-12 col-md-6" data-aos="zoom-in-right"
           style="display: flex; justify-content: flex-end; align-content: flex-end;">
-          <div id="antonsInd" class="carousel slide" data-ride="carousel">
+          <div id="antonsInd" class="carousel slide p-4" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#antonsInd" data-slide-to="0" class="active"></li>
               <li data-target="#antonsInd" data-slide-to="1"></li>
@@ -204,41 +193,43 @@
             </a>
           </div>
         </div>
-        <div class="col p-5" data-aos="zoom-in-left">
-          <div class="row text-right">
-            <h3 class="gameName">Antons</h3>
-            <p class="gameDetails text-left"><b>Orbital Tower Defense Game</b>
+        <div class="col-sm-12 col-md-6 pt-4 data-aos="zoom-in-left">
+          <div class="row text-left">
+            <h3 class="gameName px-4">Antons</h3>
+            <p class="gameDetails text-left px-4"><b>Orbital Tower Defense Game</b>
               <br>
               <br>Save Mars from the Alien Invasion by constructing Orbital Array with units called Antons.
               The game is Real Time Strategy and there will be 10 waves of Aliens.</p>
           </div>
-          <div class="row">
-            <button type="button" class="btn mainBtn mr-1" onclick="window.location.href = 'https://bacstudios.itch.io/antons/'">Play our Game <i class="icofont-ui-play"></i></button>
-            <button type="button" class="btn mainBtn ml-1" onclick="window.location.href = 'https://bacprogramming.wordpress.com/2019/03/16/play-antons-orbital-tower-defense-game/'">Blog Post</button>
+          <div class="row px-4">
+            <button type="button" class="btn mainBtn m-1" onclick="window.location.href = 'https://bacstudios.itch.io/antons/'">Play our Game <i class="icofont-ui-play"></i></button>
+            <button type="button" class="btn mainBtn m-1" onclick="window.location.href = 'https://bacprogramming.wordpress.com/2019/03/16/play-antons-orbital-tower-defense-game/'">Blog Post</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid jumbotron gamePanel m-0 p-5 nickoftimeCover">
-    <div class="container">
-      <div class="row shadow p-3 mb-5  gamePanelBox" data-aos="zoom-in">
-        <div class="col p-5" data-aos="zoom-in-right">
+  <div class="container-fluid jumbotron projectPanel mob-noHorizontalGaps p-4"></div>
+
+  <div class="container-fluid jumbotron gamePanel nickoftimeCover mob-noHorizontalGaps">
+    <div class="container p-0">
+      <div class="row gamePanelBox" data-aos="zoom-in">
+        <div class="col-sm-12 col-md-6 pt-4" data-aos="zoom-in-right">
           <div class="row text-right" style="display: flex; justify-content: flex-end; align-content: flex-end;">
-            <h3 class="gameName text-right">Nick Of Time</h3>
-            <p class="gameDetails"><b>2D Top Down Split Screen Action RPG</b>
+            <h3 class="gameName text-right px-4">Nick Of Time</h3>
+            <p class="gameDetails px-4"><b>2D Top Down Split Screen Action RPG</b>
               <br>
               <br>...in which the players are stuck in the dungeon. Now, you have to find a way out.
               <br>The game is made in <b>HomeTeam GameDev Club</b> and I was the Team Lead.</p>
           </div>
-          <div class="row" style="display: flex; justify-content: flex-end; align-content: flex-end;">
-            <button type="button" class="btn mainBtn mr-1" onclick="window.location.href = 'https://bacstudios.itch.io/nick-of-time/'">Play our Game <i class="icofont-ui-play"></i></button>
-            <button type="button" class="btn mainBtn ml-1" onclick="window.location.href = 'https://bacprogramming.wordpress.com/2019/10/21/nick-of-time-with-ht-gd-club/'">Blog Post</i></button>
+          <div class="row px-4" style="display: flex; justify-content: flex-end; align-content: flex-end;">
+            <button type="button" class="btn mainBtn m-1" onclick="window.location.href = 'https://bacstudios.itch.io/nick-of-time/'">Play our Game <i class="icofont-ui-play"></i></button>
+            <button type="button" class="btn mainBtn m-1" onclick="window.location.href = 'https://bacprogramming.wordpress.com/2019/10/21/nick-of-time-with-ht-gd-club/'">Blog Post</i></button>
           </div>
         </div>
-        <div class="col p-5" data-aos="zoom-in-left">
-          <div id="nickoftimeInd" class="carousel slide" data-ride="carousel">
+        <div class="col-sm-12 col-md-6" data-aos="zoom-in-left">
+          <div id="nickoftimeInd" class="carousel slide p-4" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#nickoftimeInd" data-slide-to="0" class="active"></li>
               <li data-target="#nickoftimeInd" data-slide-to="1"></li>
@@ -272,12 +263,14 @@
     </div>
   </div>
 
-  <div class="container-fluid jumbotron gamePanel m-0 p-5 leverageCover">
-    <div class="container">
-      <div class="row shadow p-3 mb-5  gamePanelBox" data-aos="zoom-in">
-        <div class="col p-5" data-aos="zoom-in-right"
+  <div class="container-fluid jumbotron projectPanel mob-noHorizontalGaps p-4"></div>
+
+  <div class="container-fluid jumbotron gamePanel leverageCover mob-noHorizontalGaps">
+    <div class="container p-0">
+      <div class="row gamePanelBox" data-aos="zoom-in">
+        <div class="col-sm-12 col-md-6" data-aos="zoom-in-right"
           style="display: flex; justify-content: flex-end; align-content: flex-end;">
-          <div id="leverageInd" class="carousel slide" data-ride="carousel">
+          <div id="leverageInd" class="carousel slide p-4" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#leverageInd" data-slide-to="0" class="active"></li>
               <li data-target="#leverageInd" data-slide-to="1"></li>
@@ -307,30 +300,32 @@
             </a>
           </div>
         </div>
-        <div class="col p-5" data-aos="zoom-in-left">
+        <div class="col-sm-12 col-md-6 pt-4" data-aos="zoom-in-left">
           <div class="row text-right">
-            <h3 class="gameName">Leverage</h3>
-            <p class="gameDetails text-left"><b>Manual Tower Defense Game</b>
+            <h3 class="gameName px-4">Leverage</h3>
+            <p class="gameDetails text-left px-4"><b>Manual Tower Defense Game</b>
               <br>
               <br>...where the player have to flip all the levers and defend them from the bots by clicking on them (yeah, no towers).
               Each lever will empower the player: New Visuals, New Area, New Ability.
               <br>
               <br>This game is made for <b>Ludum Dare 45</b> with theme: <i>Start with Nothing</i>.</p>
           </div>
-          <div class="row">
-            <button type="button" class="btn mainBtn mr-1" onclick="window.location.href = 'https://bacstudios.itch.io/leverage/'">Play our Game <i class="icofont-ui-play"></i></button>
-            <button type="button" class="btn mainBtn ml-1" onclick="window.location.href = 'https://bacprogramming.wordpress.com/2019/10/31/my-first-ludum-dare-levers-and-bots-ldjam-45/'">Blog Post</button>
+          <div class="row p-4">
+            <button type="button" class="btn mainBtn m-1" onclick="window.location.href = 'https://bacstudios.itch.io/leverage/'">Play our Game <i class="icofont-ui-play"></i></button>
+            <button type="button" class="btn mainBtn m-1" onclick="window.location.href = 'https://bacprogramming.wordpress.com/2019/10/31/my-first-ludum-dare-levers-and-bots-ldjam-45/'">Blog Post</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="about" class="container-fluid jumbotron gamePanel m-0 p-5">
+  <div class="container-fluid jumbotron projectPanel mob-noHorizontalGaps p-4"></div>
+
+  <div id="about" class="container-fluid jumbotron gamePanel m-0">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <div class="shadow p-5" data-aos="zoom-in-right" style="background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(160, 255, 190));">
+        <div class="col-sm-12 col-md-6" style="margin: 0; padding: 0;">
+          <div class="p-5" data-aos="zoom-in-right" style="background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(160, 255, 190));">
           <h3 class="gameName darkText">"Hire me so that I can <b>develop</b>
             <b style="color:rgb(0, 120, 20); line-height: 200%;"><br/>> Exciting Video Games</b>
             <b style="color:rgb(0, 120, 20); line-height: 200%;"><br/>> Neat Android Apps</b>
@@ -339,14 +334,14 @@
             </div>
             <div class="row m-0 p-0">
               <div class="col m-0 p-0">
-                <div class="shadow mt-3 mr-2 p-5" data-aos="zoom-in-right" style="background-image: linear-gradient(to top left, rgb(0, 50, 0), rgb(30, 90, 30));">
+                <div class=" p-5" data-aos="zoom-in-right" style="background-image: linear-gradient(to top left, rgb(0, 50, 0), rgb(30, 90, 30));">
                   <h3 class="gameName text-center"><i class="icofont-game"></i></h3>
                   <p class="gameDetails text-center">Games</p>
                   <h3 class="gameName text-center">7</h3>
                 </div>
               </div>
               <div class="col m-0 p-0">
-                <div class="shadow mt-3 ml-2 p-5" data-aos="zoom-in-right" style="background-image: linear-gradient(to top left, rgb(0, 50, 0), rgb(30, 90, 30));">
+                <div class=" p-5" data-aos="zoom-in-right" style="background-image: linear-gradient(to top left, rgb(0, 50, 0), rgb(30, 90, 30));">
                   <h3 class="gameName text-center"><i class="icofont-web"></i></h3>
                   <p class="gameDetails text-center">Websites</p>
                   <h3 class="gameName text-center">4</h3>
@@ -355,21 +350,22 @@
             </div>
             <div class="row m-0 p-0">
               <div class="col m-0 p-0">
-                <div class="shadow mt-3 mr-2 p-5" data-aos="zoom-in-right" style="background-image: linear-gradient(to top left, rgb(0, 50, 0), rgb(30, 90, 30));">
+                <div class=" p-5" data-aos="zoom-in-right" style="background-image: linear-gradient(to top left, rgb(0, 50, 0), rgb(30, 90, 30));">
                   <h3 class="gameName text-center"><i class="icofont-ui-touch-phone"></i></h3>
                   <p class="gameDetails text-center">Android</p>
                   <h3 class="gameName text-center">1</h3>
                 </div>
               </div>
               <div class="col m-0 p-0">
-                <div class="shadow mt-3 ml-2 p-5" data-aos="zoom-in-right" style="background-image: linear-gradient(to top left, rgb(0, 50, 0), rgb(30, 90, 30));">
-                  <h3 class="gameName text-center"><i class="icofont-ui-browser"></i></h3>
-                  <p class="gameDetails text-center" style="line-height: 115%;">Visit our Blog for latest updates<br/><button type="button" class="btn mainBtn" onclick="window.location.href='https://bacprogramming.wordpress.com/'">Blog Website</button></p>
+                <div class=" p-5" data-aos="zoom-in-right" style="background-image: linear-gradient(to top left, rgb(0, 50, 0), rgb(30, 90, 30));">
+                  <h3 class="gameName text-center"><i class="icofont-game"></i></h3>
+                  <p class="gameDetails text-center">HT GD</p>
+                  <h3 class="gameName text-center">7</h3>
                 </div>
               </div>
             </div>
           </div>
-        <div class="col-md-6 shadow p-5" data-aos="zoom-in-left" style="margin-left: auto; margin-right: auto; background-image: linear-gradient(to bottom right, rgb(0, 90, 60), rgb(5, 70, 20));">
+        <div class="col-sm-12 col-md-6 px-4 py-4" data-aos="zoom-in-left" style="background-image: linear-gradient(to bottom right, rgb(0, 90, 60), rgb(5, 70, 20));">
           <h4 class="gameName">My Tech Timeline</h4>
           <p class="gameDetails">(This timeline only covers my history with programming and game engines that I used. Infact, it also misses a lot of that too. For example, I learned and/or tried OpenGL, Python and SFML as well.)</p>
           <ul class="timeline">
@@ -550,15 +546,42 @@
   </div>
 </div>
 
-  <div id="htgd" class="container-fluid jumbotron projectPanel m-0">
-    <div class="container">
+<div id="bacstudios" class="container-fluid jumbotron gamePanel bacStudiosCover p-4 m-0">
+  <div class="container mob-noHorizontalGaps">
+    <div class="row  mob-noHorizontalGaps gamePanelBox" data-aos="zoom-in">
+      <div class="col-sm-12 col-md-6 p-4" data-aos="zoom-in-right">
+        <div class="p-5"><img src="assets/img/bacLogoBlack.png" alt="BAC Studios Logo" class="rounded img-thumbnail d-block" style="background-color: black;" /></div>
+      </div>
+      <div class="col-sm-12 col-md-6 p-4" data-aos="zoom-in-left">
+        <div class="row text-left">
+          <h3 class="gameName">Bold Aesthetic Creative Studios</h3>
+          <p class="gameDetails text-left"><b>1-man Indie Game Studio at this moment where I make indie games and 
+            just enjoy the process of making games.</b></p>
+          <p class="gameDetails text-left">Contributions to GameDev and Programming:
+            <br/><br/><a style="background-color: rgb(200, 0, 0); border-radius: 6px; padding: 6px; margin: 6px;" href="https://bacprogramming.wordpress.com/c-programming-series/">C++ Programming Series</a>
+            <br/><br/><a style="background-color: rgb(200, 0, 0); border-radius: 6px; padding: 6px; margin: 6px;" href="https://bacprogramming.wordpress.com/articles-outside/">Articles Outside</a>
+            <br/><br/><a style="background-color: rgb(200, 0, 0); border-radius: 6px; padding: 6px; margin: 6px;" href="https://play.google.com/store/apps/details?id=com.BACStudios.Colerr">Colerr on Play Store</a></p>
+          </div>
+        <div style="padding: 0.5rem;"></div>
+        <div class="row">
+          <button type="button" class="btn mainBtn m-1" onclick="window.location.href = 'bacstudios.html'">Studio Portfolio</button>
+          <button type="button" class="btn mainBtn m-1" onclick="window.location.href = 'https://bacprogramming.wordpress.com/'">Visit Blog</button>
+          <button type="button" class="btn mainBtn m-1" onclick="window.location.href = 'https://play.google.com/store/apps/details?id=com.BACStudios.bacstudios'">Download App</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="htgd" class="container-fluid jumbotron mob-noHorizontalGaps mob-noVerticalGaps projectPanel">
+    <div class="container mob-noHorizontalGaps px-2">
       <h3 class="htgdHeader p-5" data-aos="zoom-in">HomeTeam GameDev Club Contributions</h3>
       <div class="row p-3 projectPanelBox" data-aos="zoom-in">
         <div class="col p-5">
           <img src="assets/img/htgdlogo.png" width="400px" height="400px" class="px-5 img-fluid  d-block"
             data-aos="zoom-in-right" alt="HTGD Logo" style="background-color: rgb(0, 50, 60);">
         </div>
-        <div class="col pt-5 pb-5" data-aos="zoom-in">
+        <div class="col-sm-12 col-md-4 mob-noVerticalGaps" data-aos="zoom-in">
           <h3 class="heavyMainFont">About HT GD Club</h3>
           <p class="mainFont text-left">
             HT GD Club is a place where members of the club make games together as a team and without any kind of stress
@@ -568,7 +591,7 @@
             The club have made more than <b>80 games</b> over the past <b>4 years</b>.
           </p>
         </div>
-        <div class="col pt-5 pb-5 pr-5" data-aos="zoom-in-left">
+        <div class="col mob-noVerticalGaps" data-aos="zoom-in-left">
           <p class="mainFont text-left">
             We make original games and everyone can pitch a game idea to start a new game project.
             I joined HT GD Club on <b>Febuary 2018</b> and ever since then, I have contributed to <b>7 games</b>.
@@ -579,7 +602,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col gamePanel nethercardKingdomCover p-5" data-aos="zoom-in-right">
+        <div class="col-sm-12 col-md-6 gamePanel nethercardKingdomCover p-5" data-aos="zoom-in-right">
           <h4 class="display-5 mainFont">Nethercard Kingdom</h4>
           <p class="htgdDetails">Drag'n'Drop your Cards and Fight back your B'n'W Nethercard Kingdom! I worked on the smooth Card Draw Movements, the World Map, some deck builder UI improvements and Ocean Of Strength credits music. Hmm, also some animations, transitions, effects and bugs fixes. :D</h2>
             <div class="row" style="display: flex; justify-content: flex-end; align-content: flex-end;">
@@ -587,7 +610,7 @@
               <button type="button" class="btn mainBtn ml-1 mr-2" onclick="window.location.href = 'https://bacprogramming.wordpress.com/2020/02/04/i-am-a-part-of-this-awesome-game-nethercard-kingdom-ht-gd-7/'">Blog Post</button>
             </div>
         </div>
-        <div class="col gamePanel ghostRustlersCover p-5" data-aos="zoom-in-left">
+        <div class="col-sm-12 col-md-6 gamePanel ghostRustlersCover p-5" data-aos="zoom-in-left">
           <h4 class="display-5 mainFont">Ghost Rustlers</h4>
           <p class="htgdDetails">2D Side-Scroller Turn-Based Shooting game. I made 2 cactus sprites, implemented character selection tints and realigned the game graphics to look nicer on large screens.</h2>
             <div class="row" style="display: flex; justify-content: flex-end; align-content: flex-end;">
@@ -597,7 +620,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col gamePanel exitTheShadowCover p-5" data-aos="zoom-in-right">
+        <div class="col-sm-12 col-md-6 gamePanel exitTheShadowCover p-5" data-aos="zoom-in-right">
           <h4 class="display-5 mainFont">Exit the Shadow</h4>
           <p class="htgdDetails">A Dark Experience where you face your 3 Evil Selves and 'exit your shadow'. I made the Player Sprite with all its animations, Vignette effect and Attack sound.</h2>
             <div class="row" style="display: flex; justify-content: flex-end; align-content: flex-end;">
@@ -605,7 +628,7 @@
               <button type="button" class="btn mainBtn ml-1 mr-2" onclick="window.location.href = 'https://bacprogramming.wordpress.com/2019/06/24/i-am-a-part-of-this-awesome-game-exit-the-shadow-gamkedo-5/'">Blog Post</button>
             </div>
         </div>
-        <div class="col gamePanel alienOverrunCover p-5" data-aos="zoom-in-left">
+        <div class="col-sm-12 col-md-6 gamePanel alienOverrunCover p-5" data-aos="zoom-in-left">
           <h4 class="display-5 mainFont">Alien Overrun</h4>
           <p class="htgdDetails">Tower Defense/Light RTS Game. You gather resources and built towers to defend yourself against aliens. I made the Mage Tower, did some UI work and lots of physics experiments.</h2>
             <div class="row" style="display: flex; justify-content: flex-end; align-content: flex-end;">
@@ -615,7 +638,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col gamePanel delvCover p-5" data-aos="zoom-in-right">
+        <div class="col-sm-12 col-md-6 gamePanel delvCover p-5" data-aos="zoom-in-right">
           <h4 class="display-5 mainFont">Delv</h4>
           <p class="htgdDetails">2D Top Down Action RPG + Coop Single Screen Multiplayer. It's time for some mage action! I made 2 Boss Battles with team help, some UI work and bug fixes.</h2>
             <div class="row" style="display: flex; justify-content: flex-end; align-content: flex-end;">
@@ -623,7 +646,7 @@
               <button type="button" class="btn mainBtn ml-1 mr-2" onclick="window.location.href = 'https://bacprogramming.wordpress.com/2019/05/08/i-am-a-part-of-this-awesome-game-delv-gamkedo-3/'">Blog Post</button>
             </div>
         </div>
-        <div class="col gamePanel wildDriversCover p-5" data-aos="zoom-in-left">
+        <div class="col-sm-12 col-md-6 gamePanel wildDriversCover p-5" data-aos="zoom-in-left">
           <h4 class="display-5 mainFont">Wild Drivers</h4>
           <p class="htgdDetails">Split Screen Racing Game that reminds me of the good old days when I used to play NFS II SE. I made and implemented the audio, and did some camera work.</h2>
             <div class="row" style="display: flex; justify-content: flex-end; align-content: flex-end;">
@@ -633,7 +656,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col gamePanel whisperdriftCover p-5" data-aos="zoom-in-right">
+        <div class="col-sm-12 gamePanel whisperdriftCover p-5" data-aos="zoom-in-right"> <!--no col-md-6 for odd number last game-->
           <h4 class="display-5 mainFont">Whisperdrift</h4>
           <p class="htgdDetails">Very relaxing and joyful experience. I did work on UI in this game. Also, my first Gamkedo game!</h2>
             <div class="row" style="display: flex; justify-content: flex-end; align-content: flex-end;">
@@ -647,10 +670,10 @@
   </div>
 
   <div id="contact" class="container-fluid jumbotron m-0" style="height: 100vh; background-color: white;">
-    <div class="container">
+    <div class="container flexToCenterFullScreenColumn">
       <div class="col-md-6" style="margin-left: auto; margin-right: auto;">
-      <h3 class="display-5 mainFont mb-4">Am I the one you are looking for? Do you want to <b>hire me</b>? Or maybe, you want to <b>know more about me</b>.</h3>
-      <h3 class="display-5 mainFont">Send me an email at <a href="mailto:programmercheema@gmail.com"><b style="border-radius:0.3rem; padding:0.1rem; background-color: rgba(0,0,0,0.5); color: white;">programmercheema@gmail.com</b></a>. I will reply within 3 days.</h3>
+      <h3 class="display-5 mainFont mb-4 contactFontSize">Am I the one you are looking for? Do you want to <b>hire me</b>? Or maybe, you want to <b>know more about me</b>.</h3>
+      <h3 class="display-5 mainFont contactFontSize">Send me an email at <a href="mailto:programmercheema@gmail.com"><b style="border-radius:0.3rem; padding:0.1rem; background-color: rgba(0,0,0,0.5); color: white;">programmercheema@gmail.com</b></a>. I will reply within 3 days.</h3>
       <img src="https://scontent.fisb6-1.fna.fbcdn.net/v/t1.0-9/87399235_3732033653503271_3974344345221332992_n.jpg?_nc_cat=105&_nc_sid=85a577&_nc_ohc=HpcXe3XK1W4AX8DgYNr&_nc_ht=scontent.fisb6-1.fna&oh=52bc9982bac551af90d4d3132b24e84b&oe=5E962345"
         alt="Programmer Cheema Profile Pic" class="rounded mx-auto mt-4 d-block" style="width: 14rem; height: 14rem;">
     </div>
@@ -666,11 +689,17 @@
 <script>
   AOS.init();
 
-  $('.projectMobImgTilt').tilt({
-    glare: true,
-    maxGlare: 0.25,
-    scale: 1.5
-  });
+  if (window.matchMedia("(max-width: 786px)").matches) {
+    $('.projectMobImgTilt').tilt({
+      scale: 1.1
+    });
+  } else {
+    $('.projectMobImgTilt').tilt({
+      glare: true,
+      maxGlare: 0.25,
+      scale: 1.5
+    });
+  }
 
   function timelineToggler(i) {
     for(let o = 0; o < 14; o++)
