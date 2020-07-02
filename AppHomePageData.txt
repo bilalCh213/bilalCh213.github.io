@@ -33,6 +33,6 @@
 
 	"title7": "Follow Us on Facebook",
 	"description7": "",
-	"cover7": "https://scontent.fisb6-1.fna.fbcdn.net/v/t1.0-9/80658095_531056264151663_4173558062419804160_o.png",
+	"cover7": "https://pbs.twimg.com/profile_banners/161990068/1577730802/600x200",
 	"link7": "https://www.facebook.com/bacStudios/"
 }
