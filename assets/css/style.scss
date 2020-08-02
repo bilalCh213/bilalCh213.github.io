@@ -115,13 +115,8 @@ a {
     {
         padding: 4px;
         margin: 4px;
-        background-color: rgba(0, 120, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.4);
         transition: 0.25s;
-        &:hover {
-            background-color: rgba(0, 160, 0, 1.0);
-            font-size: 125%;
-            padding: 5px;
-        }
     }
 
     .callToActionEmailIcon
@@ -138,10 +133,10 @@ a {
     .linkHoverAnim
     {
         padding: 10px;
-        background-color: rgba(0, 50, 0, 0.6);
+        background-color: rgba(255, 255, 255, 0.15);
         transition: 0.25s;
         &:hover {
-            background-color: rgba(0, 50, 0, 1.0);
+            background-color: rgba(255, 255, 255, 0.3);
             font-size: 125%;
             padding: 5px;
         }
@@ -159,16 +154,15 @@ a {
 
 .my-hero {
     @include backgroundCoverImage((linear-gradient(to left,
-        rgba(0, 255, 0, 0.1), rgba(0, 64, 0, 0.4), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1.0)),
-    url("../img/coverMobile.jpg")));
+        rgba(0, 255, 0, 0.0), rgba(0, 64, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+        url("../img/rgbg6.png")));
     @include anim(fadeIn, 1s, 2s);
 }
 
 @media screen and (min-width: 767px) {
     .my-hero {
-        @include backgroundCoverImage((linear-gradient(to left,
-        rgba(0, 255, 0, 0.1), rgba(0, 64, 0, 0.4), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1.0)),
-        url("../img/cover.jpg")));
+        @include backgroundCoverImage((url("../img/me1.png"), linear-gradient(to left,
+        rgba(0, 255, 0, 0.05), rgba(0, 64, 0, 0.2), rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.5)), url("../img/rgbg5.png")));
         background-attachment: fixed;
         @include anim(fadeIn, 1s, 2s);
     }
@@ -285,8 +279,8 @@ ul.timeline > li:before {
 }
 
 .projectPanel {
-    color: $mainDarkColor;
-    background-color: $projectPanelColor;
+    color: rgb(238, 238, 238);
+    @include backgroundCoverImage((linear-gradient(to top, rgba(0.0,0.0,0.0,0.0), rgba(0.0,0.0,0.0,1.0)), url("../img/rgbg9.png")));
     margin: 0;
 
     .projectPanelHeader {
@@ -303,7 +297,7 @@ ul.timeline > li:before {
     }
 
     .projectPanelBox {
-        background-color: $whiteColor;
+        background-color: rgb(3, 43, 47);
     }
 
     .projectDetails {
@@ -315,8 +309,7 @@ ul.timeline > li:before {
 @media screen and (min-width: 0px) {
     .gamePanel {
         color: $whiteColor;
-        background-color: $gamePanelColor;
-
+        @include backgroundCoverImage(url("../img/rgbg2.png"));
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -371,17 +364,40 @@ ul.timeline > li:before {
     }
 }
 
-.antonsCover
+.mysticchambersCover
 {
-    @include backgroundCoverImage((linear-gradient(to top,
-        rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.9)),
-    url("https://img.itch.zone/aW1hZ2UvMzg3NjIyLzMwNDU4NTguZ2lm/original/Pp3ROm.gif")));
+    @include backgroundCoverImage(
+    url("https://img.itch.zone/aW1nLzM3NTU4MTEuZ2lm/original/HjhKNZ.gif"));
 
     .gamePanelBox {
         color: $whiteColor;
         margin: 0;
         padding: 0;
-        background-color: rgba(5, 10, 20, 0.6);
+        background-color: rgba(31, 0, 21, 0.7);
+    }
+
+    .mainBtn {
+        color: $whiteColor;
+        background-color: rgb(150, 0, 200);
+        border-color: $buttonBorderColor;
+
+        &:hover {
+            color: white;
+            background-color: black;
+        }
+    }
+}
+
+.antonsCover
+{
+    @include backgroundCoverImage(
+    url("https://img.itch.zone/aW1hZ2UvMzg3NjIyLzMwNDU4NTguZ2lm/original/Pp3ROm.gif"));
+
+    .gamePanelBox {
+        color: $whiteColor;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(2, 5, 12, 0.7);
     }
 
     .mainBtn {
@@ -398,15 +414,14 @@ ul.timeline > li:before {
 
 .nickoftimeCover
 {
-    @include backgroundCoverImage((linear-gradient(to top,
-    rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.9)),
-    url("https://bacprogramming.files.wordpress.com/2019/10/story2twitter.gif?w=672&zoom=2")));
+    @include backgroundCoverImage(
+    url("https://bacprogramming.files.wordpress.com/2019/10/story2twitter.gif?w=672&zoom=2"));
 
     .gamePanelBox {
         color: $whiteColor;
         margin: 0;
         padding: 0;
-        background-color: rgba(20, 5, 10, 0.6);
+        background-color: rgba(20, 5, 10, 0.7);
     }
 
     .mainBtn {
@@ -423,15 +438,14 @@ ul.timeline > li:before {
 
 .leverageCover
 {
-    @include backgroundCoverImage((linear-gradient(to top,
-        rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.9)),
-    url("https://img.itch.zone/aW1hZ2UvNDk1MzEzLzI1NjQzMjQuZ2lm/original/BaR86T.gif")));
+    @include backgroundCoverImage(
+    url("https://img.itch.zone/aW1hZ2UvNDk1MzEzLzI1NjQzMjQuZ2lm/original/BaR86T.gif"));
 
     .gamePanelBox {
         color: $whiteColor;
         margin: 0;
         padding: 0;
-        background-color: rgba(5, 25, 20, 0.6);
+        background-color: rgba(5, 25, 20, 0.7);
     }
 
     .mainBtn {
@@ -448,8 +462,7 @@ ul.timeline > li:before {
 
 .bacStudiosCover
 {
-    @include backgroundCoverImage((linear-gradient(to top,
-        rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1)),
+    @include backgroundCoverImage((linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0.9), rgba(0,0,0,0.7)),
     url("https://img.itch.zone/aW1nLzI4MjgzNTMucG5n/original/LgAKA6.png")));
 
     .gamePanelBox {
@@ -597,6 +610,13 @@ ul.timeline > li:before {
         rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
         url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/original/H%2FUfjI.gif")));
     }
+}
+
+.endSectionCover
+{
+    @include backgroundCoverImage((linear-gradient(to top,
+    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url("../img/rgbg8.png")));
 }
 
 @media screen and (max-width: 767px) {

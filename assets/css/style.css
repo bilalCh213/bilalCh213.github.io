@@ -122,14 +122,9 @@ a:hover {
   .linkHoverAnim {
     padding: 4px;
     margin: 4px;
-    background-color: rgba(0, 120, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     -webkit-transition: 0.25s;
     transition: 0.25s;
-  }
-  .linkHoverAnim:hover {
-    background-color: #00a000;
-    font-size: 125%;
-    padding: 5px;
   }
   .callToActionEmailIcon {
     padding: 8px;
@@ -143,12 +138,12 @@ a:hover {
 @media screen and (min-width: 767px) {
   .linkHoverAnim {
     padding: 10px;
-    background-color: rgba(0, 50, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.15);
     -webkit-transition: 0.25s;
     transition: 0.25s;
   }
   .linkHoverAnim:hover {
-    background-color: #003200;
+    background-color: rgba(255, 255, 255, 0.3);
     font-size: 125%;
     padding: 5px;
   }
@@ -162,8 +157,8 @@ a:hover {
 }
 
 .my-hero {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 255, 0, 0.1)), color-stop(rgba(0, 64, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.7)), to(black)), url("../img/coverMobile.jpg");
-  background-image: linear-gradient(to left, rgba(0, 255, 0, 0.1), rgba(0, 64, 0, 0.4), rgba(0, 0, 0, 0.7), black), url("../img/coverMobile.jpg");
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 255, 0, 0)), color-stop(rgba(0, 64, 0, 0.5)), color-stop(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.9))), url("../img/rgbg6.png");
+  background-image: linear-gradient(to left, rgba(0, 255, 0, 0), rgba(0, 64, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../img/rgbg6.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -179,8 +174,8 @@ a:hover {
 
 @media screen and (min-width: 767px) {
   .my-hero {
-    background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 255, 0, 0.1)), color-stop(rgba(0, 64, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.7)), to(black)), url("../img/cover.jpg");
-    background-image: linear-gradient(to left, rgba(0, 255, 0, 0.1), rgba(0, 64, 0, 0.4), rgba(0, 0, 0, 0.7), black), url("../img/cover.jpg");
+    background-image: url("../img/me1.png"), -webkit-gradient(linear, right top, left top, from(rgba(0, 255, 0, 0.05)), color-stop(rgba(0, 64, 0, 0.2)), color-stop(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.5))), url("../img/rgbg5.png");
+    background-image: url("../img/me1.png"), linear-gradient(to left, rgba(0, 255, 0, 0.05), rgba(0, 64, 0, 0.2), rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.5)), url("../img/rgbg5.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -382,8 +377,12 @@ ul.timeline > li:before {
 }
 
 .projectPanel {
-  color: #0a280a;
-  background-color: #c8ffc8;
+  color: #eeeeee;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(black)), url("../img/rgbg9.png");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), black), url("../img/rgbg9.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   margin: 0;
 }
 
@@ -401,7 +400,7 @@ ul.timeline > li:before {
 }
 
 .projectPanel .projectPanelBox {
-  background-color: #fafff5;
+  background-color: #032b2f;
 }
 
 .projectPanel .projectDetails {
@@ -412,7 +411,10 @@ ul.timeline > li:before {
 @media screen and (min-width: 0px) {
   .gamePanel {
     color: #fafff5;
-    background-color: #509650;
+    background-image: url("../img/rgbg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -474,9 +476,33 @@ ul.timeline > li:before {
   background-color: black;
 }
 
+.mysticchambersCover {
+  background-image: url("https://img.itch.zone/aW1nLzM3NTU4MTEuZ2lm/original/HjhKNZ.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.mysticchambersCover .gamePanelBox {
+  color: #fafff5;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(31, 0, 21, 0.7);
+}
+
+.mysticchambersCover .mainBtn {
+  color: #fafff5;
+  background-color: #9600c8;
+  border-color: rgba(250, 255, 245, 0.5);
+}
+
+.mysticchambersCover .mainBtn:hover {
+  color: white;
+  background-color: black;
+}
+
 .antonsCover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.25)), color-stop(rgba(0, 0, 0, 0.25)), color-stop(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1hZ2UvMzg3NjIyLzMwNDU4NTguZ2lm/original/Pp3ROm.gif");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1hZ2UvMzg3NjIyLzMwNDU4NTguZ2lm/original/Pp3ROm.gif");
+  background-image: url("https://img.itch.zone/aW1hZ2UvMzg3NjIyLzMwNDU4NTguZ2lm/original/Pp3ROm.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -486,7 +512,7 @@ ul.timeline > li:before {
   color: #fafff5;
   margin: 0;
   padding: 0;
-  background-color: rgba(5, 10, 20, 0.6);
+  background-color: rgba(2, 5, 12, 0.7);
 }
 
 .antonsCover .mainBtn {
@@ -501,8 +527,7 @@ ul.timeline > li:before {
 }
 
 .nickoftimeCover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.25)), color-stop(rgba(0, 0, 0, 0.25)), color-stop(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.9))), url("https://bacprogramming.files.wordpress.com/2019/10/story2twitter.gif?w=672&zoom=2");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.9)), url("https://bacprogramming.files.wordpress.com/2019/10/story2twitter.gif?w=672&zoom=2");
+  background-image: url("https://bacprogramming.files.wordpress.com/2019/10/story2twitter.gif?w=672&zoom=2");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -512,7 +537,7 @@ ul.timeline > li:before {
   color: #fafff5;
   margin: 0;
   padding: 0;
-  background-color: rgba(20, 5, 10, 0.6);
+  background-color: rgba(20, 5, 10, 0.7);
 }
 
 .nickoftimeCover .mainBtn {
@@ -527,8 +552,7 @@ ul.timeline > li:before {
 }
 
 .leverageCover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.25)), color-stop(rgba(0, 0, 0, 0.25)), color-stop(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1hZ2UvNDk1MzEzLzI1NjQzMjQuZ2lm/original/BaR86T.gif");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1hZ2UvNDk1MzEzLzI1NjQzMjQuZ2lm/original/BaR86T.gif");
+  background-image: url("https://img.itch.zone/aW1hZ2UvNDk1MzEzLzI1NjQzMjQuZ2lm/original/BaR86T.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -538,7 +562,7 @@ ul.timeline > li:before {
   color: #fafff5;
   margin: 0;
   padding: 0;
-  background-color: rgba(5, 25, 20, 0.6);
+  background-color: rgba(5, 25, 20, 0.7);
 }
 
 .leverageCover .mainBtn {
@@ -553,8 +577,8 @@ ul.timeline > li:before {
 }
 
 .bacStudiosCover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.75)), color-stop(rgba(0, 0, 0, 0.9)), to(black)), url("https://img.itch.zone/aW1nLzI4MjgzNTMucG5n/original/LgAKA6.png");
-  background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9), black), url("https://img.itch.zone/aW1nLzI4MjgzNTMucG5n/original/LgAKA6.png");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.7))), url("https://img.itch.zone/aW1nLzI4MjgzNTMucG5n/original/LgAKA6.png");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("https://img.itch.zone/aW1nLzI4MjgzNTMucG5n/original/LgAKA6.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -732,6 +756,14 @@ ul.timeline > li:before {
   color: rgba(250, 255, 245, 0.5);
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.25))), url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/original/H%2FUfjI.gif");
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)), url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/original/H%2FUfjI.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.endSectionCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.8)), color-stop(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.4))), url("../img/rgbg8.png");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/rgbg8.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
