@@ -476,6 +476,31 @@ ul.timeline > li:before {
   background-color: black;
 }
 
+.youtubeCover {
+  background-image: -webkit-gradient(linear, right top, left top, from(#003200), color-stop(50%, #003200), color-stop(50.01%, #320000));
+  background-image: linear-gradient(to left, #003200, #003200 50%, #320000 50.01%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.youtubeCover .gamePanelBox {
+  color: #fafff5;
+  margin: 0;
+  padding: 0;
+}
+
+.youtubeCover .mainBtn {
+  color: #fafff5;
+  background-color: #c80000;
+  border-color: rgba(250, 255, 245, 0.5);
+}
+
+.youtubeCover .mainBtn:hover {
+  color: white;
+  background-color: black;
+}
+
 .colerrCover {
   background-image: url("https://img.itch.zone/aW1nLzI5MDIxOTgucG5n/original/TA4FKY.png");
   background-size: cover;
@@ -492,7 +517,7 @@ ul.timeline > li:before {
 
 .colerrCover .mainBtn {
   color: #fafff5;
-  background-color: #9600c8;
+  background-color: #141414;
   border-color: rgba(250, 255, 245, 0.5);
 }
 

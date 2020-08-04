@@ -364,6 +364,29 @@ ul.timeline > li:before {
     }
 }
 
+.youtubeCover
+{
+    @include backgroundCoverImage(linear-gradient(to left, rgb(0,50,0), rgb(0,50,0) 50%, rgb(50,0,0) 50.01%));
+
+    .gamePanelBox {
+        color: $whiteColor;
+        margin: 0;
+        padding: 0;
+        //background-color: rgba(40, 40, 40, 0.9);
+    }
+
+    .mainBtn {
+        color: $whiteColor;
+        background-color: rgb(200, 0, 0);
+        border-color: $buttonBorderColor;
+
+        &:hover {
+            color: white;
+            background-color: black;
+        }
+    }
+}
+
 .colerrCover
 {
     @include backgroundCoverImage(
@@ -378,7 +401,7 @@ ul.timeline > li:before {
 
     .mainBtn {
         color: $whiteColor;
-        background-color: rgb(150, 0, 200);
+        background-color: rgb(20, 20, 20);
         border-color: $buttonBorderColor;
 
         &:hover {
