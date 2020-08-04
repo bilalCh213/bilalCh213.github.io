@@ -364,25 +364,68 @@ ul.timeline > li:before {
     }
 }
 
-.youtubeCover
-{
-    @include backgroundCoverImage(linear-gradient(to left, rgb(0,50,0), rgb(0,50,0) 50%, rgb(50,0,0) 50.01%));
 
-    .gamePanelBox {
-        color: $whiteColor;
-        margin: 0;
-        padding: 0;
-        //background-color: rgba(40, 40, 40, 0.9);
+
+@media screen and (min-width: 0px) {
+    .youtubeCover
+    {
+        @include backgroundCoverImage((linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1)), linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1)), linear-gradient(to top, rgb(0,255,0), rgb(0,255,0) 50%, rgb(255,0,0) 50.01%)));
+
+        .youtubeHeading {
+            display: none;
+        }
+
+        .gamePanelBox {
+            color: $whiteColor;
+            margin: 0;
+            padding: 0;
+        }
+
+        .youtubeFrameSize {
+            width: 320px;
+            height: 180px;
+        }
+
+        .urduyt {
+            padding-bottom: 1rem;
+        }
+
+        .engyt {
+            padding-top: 1rem;
+        }
     }
+}
 
-    .mainBtn {
-        color: $whiteColor;
-        background-color: rgb(200, 0, 0);
-        border-color: $buttonBorderColor;
+@media screen and (min-width: 767px) {
+    .youtubeCover
+    {
+        @include backgroundCoverImage((linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1)), linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1)), linear-gradient(to left, rgb(0,255,0), rgb(0,255,0) 50%, rgb(255,0,0) 50.01%)));
 
-        &:hover {
-            color: white;
-            background-color: black;
+        .youtubeHeading {
+            display: block;
+            @include mainFont();
+            font-weight: 700;
+            font-size: $headingFontSize;
+            text-align: center;
+        }
+
+        .gamePanelBox {
+            color: $whiteColor;
+            margin: 0;
+            padding: 0;
+        }
+
+        .youtubeFrameSize {
+            width: 480px;
+            height: 270px;
+        }
+
+        .urduyt {
+            padding-bottom: 0rem;
+        }
+
+        .engyt {
+            padding-top: 0rem;
         }
     }
 }
@@ -396,7 +439,7 @@ ul.timeline > li:before {
         color: $whiteColor;
         margin: 0;
         padding: 0;
-        background-color: rgba(40, 40, 40, 0.9);
+        background-color: rgba(40, 40, 40, 0.95);
     }
 
     .mainBtn {

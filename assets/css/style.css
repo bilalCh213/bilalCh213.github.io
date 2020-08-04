@@ -476,29 +476,64 @@ ul.timeline > li:before {
   background-color: black;
 }
 
-.youtubeCover {
-  background-image: -webkit-gradient(linear, right top, left top, from(#003200), color-stop(50%, #003200), color-stop(50.01%, #320000));
-  background-image: linear-gradient(to left, #003200, #003200 50%, #320000 50.01%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+@media screen and (min-width: 0px) {
+  .youtubeCover {
+    background-image: -webkit-gradient(linear, right top, left top, from(black), color-stop(rgba(0, 0, 0, 0)), to(black)), -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0)), color-stop(black), color-stop(rgba(0, 0, 0, 0)), to(black)), -webkit-gradient(linear, left bottom, left top, from(lime), color-stop(50%, lime), color-stop(50.01%, red));
+    background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0), black), linear-gradient(to top, black, rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0), black), linear-gradient(to top, lime, lime 50%, red 50.01%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .youtubeCover .youtubeHeading {
+    display: none;
+  }
+  .youtubeCover .gamePanelBox {
+    color: #fafff5;
+    margin: 0;
+    padding: 0;
+  }
+  .youtubeCover .youtubeFrameSize {
+    width: 320px;
+    height: 180px;
+  }
+  .youtubeCover .urduyt {
+    padding-bottom: 1rem;
+  }
+  .youtubeCover .engyt {
+    padding-top: 1rem;
+  }
 }
 
-.youtubeCover .gamePanelBox {
-  color: #fafff5;
-  margin: 0;
-  padding: 0;
-}
-
-.youtubeCover .mainBtn {
-  color: #fafff5;
-  background-color: #c80000;
-  border-color: rgba(250, 255, 245, 0.5);
-}
-
-.youtubeCover .mainBtn:hover {
-  color: white;
-  background-color: black;
+@media screen and (min-width: 767px) {
+  .youtubeCover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0)), to(black)), -webkit-gradient(linear, right top, left top, from(black), color-stop(rgba(0, 0, 0, 0)), color-stop(black), color-stop(rgba(0, 0, 0, 0)), to(black)), -webkit-gradient(linear, right top, left top, from(lime), color-stop(50%, lime), color-stop(50.01%, red));
+    background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0), black), linear-gradient(to left, black, rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0), black), linear-gradient(to left, lime, lime 50%, red 50.01%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .youtubeCover .youtubeHeading {
+    display: block;
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  .youtubeCover .gamePanelBox {
+    color: #fafff5;
+    margin: 0;
+    padding: 0;
+  }
+  .youtubeCover .youtubeFrameSize {
+    width: 480px;
+    height: 270px;
+  }
+  .youtubeCover .urduyt {
+    padding-bottom: 0rem;
+  }
+  .youtubeCover .engyt {
+    padding-top: 0rem;
+  }
 }
 
 .colerrCover {
@@ -512,7 +547,7 @@ ul.timeline > li:before {
   color: #fafff5;
   margin: 0;
   padding: 0;
-  background-color: rgba(40, 40, 40, 0.9);
+  background-color: rgba(40, 40, 40, 0.95);
 }
 
 .colerrCover .mainBtn {
