@@ -476,6 +476,31 @@ ul.timeline > li:before {
   background-color: black;
 }
 
+.colerrCover {
+  background-image: url("https://img.itch.zone/aW1nLzI5MDIxOTgucG5n/original/TA4FKY.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.colerrCover .gamePanelBox {
+  color: #fafff5;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(40, 40, 40, 0.9);
+}
+
+.colerrCover .mainBtn {
+  color: #fafff5;
+  background-color: #9600c8;
+  border-color: rgba(250, 255, 245, 0.5);
+}
+
+.colerrCover .mainBtn:hover {
+  color: white;
+  background-color: black;
+}
+
 .mysticchambersCover {
   background-image: url("https://img.itch.zone/aW1nLzM3NTU4MTEuZ2lm/original/HjhKNZ.gif");
   background-size: cover;

@@ -364,6 +364,30 @@ ul.timeline > li:before {
     }
 }
 
+.colerrCover
+{
+    @include backgroundCoverImage(
+    url("https://img.itch.zone/aW1nLzI5MDIxOTgucG5n/original/TA4FKY.png"));
+
+    .gamePanelBox {
+        color: $whiteColor;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(40, 40, 40, 0.9);
+    }
+
+    .mainBtn {
+        color: $whiteColor;
+        background-color: rgb(150, 0, 200);
+        border-color: $buttonBorderColor;
+
+        &:hover {
+            color: white;
+            background-color: black;
+        }
+    }
+}
+
 .mysticchambersCover
 {
     @include backgroundCoverImage(
