@@ -23,6 +23,14 @@ $buttonBorderColor: rgba(250, 255, 245, 0.5);
     background-position: center center;
 }
 
+@mixin backgroundCoverImageWithFilter($bg, $filter) {
+    background-image: $bg;
+    background-blend-mode: $filter;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 @mixin flexToCenter($screenHeight, $dir) {
     height: $screenHeight;
     display: flex;
@@ -82,32 +90,17 @@ a {
 }
 
 .iconSize {
-    width: 3.4rem;
-    height: 3.4rem;
+    width: 2.8rem;
+    height: 2.8rem;
 }
 
 .btnIconSize {
-    width: 1.1rem;
-    height: 1.1rem;
+    width: 1.0rem;
+    height: 1.0rem;
 }
 
 .container-fluid {
     border-radius: 0px 0px 0px 0px;
-}
-
-.loadingDisplay {
-    @include flexToCenter(100vh, column);
-    @include mainFont();
-    font-size: $subtitleHeadingFontSize;
-    font-weight: 700;
-    padding-left: auto;
-    padding-right: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    @include anim(fadeOut, 1s, 1s);
 }
 
 @media screen and (min-width: 0px) {
@@ -115,62 +108,64 @@ a {
     {
         padding: 4px;
         margin: 4px;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.8);
         transition: 0.25s;
     }
 
     .callToActionEmailIcon
     {
-        padding: 8px;
+        padding: 6px;
         background-color: white;
         color: black;
-        width: 4rem;
-        height: 4rem;
+        width: 2.8rem;
+        height: 2.8rem;
     }
 }
 
 @media screen and (min-width: 767px) {
     .linkHoverAnim
     {
-        padding: 10px;
-        background-color: rgba(255, 255, 255, 0.15);
+        padding: 8px;
+        background-color: rgba(0, 0, 0, 0.75);
         transition: 0.25s;
         &:hover {
-            background-color: rgba(255, 255, 255, 0.3);
+            background-color: rgba(0, 0, 0, 1.0);
             font-size: 125%;
-            padding: 5px;
+            padding: 4px;
         }
     }
 
     .callToActionEmailIcon
     {
-        padding: 15px;
+        padding: 10px;
         background-color: white;
         color: black;
-        width: 4rem;
-        height: 4rem;
+        width: 3.4rem;
+        height: 3.4rem;
+        &:hover {
+            background-color: rgba(255, 255, 255, 1.0);
+            font-size: 125%;
+            padding: 4px;
+        }
     }
 }
 
 .my-hero {
-    @include backgroundCoverImage((linear-gradient(to left,
-        rgba(0, 255, 0, 0.0), rgba(0, 64, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
-        url("../img/rgbg6.png")));
-    @include anim(fadeIn, 1s, 2s);
+    @include backgroundCoverImageWithFilter((linear-gradient(to right,
+        rgba(0, 255, 150, 1.0), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("../img/coverMobile.png")), multiply);
 }
 
 @media screen and (min-width: 767px) {
     .my-hero {
-        @include backgroundCoverImage((url("../img/me1.png"), linear-gradient(to left,
-        rgba(0, 255, 0, 0.05), rgba(0, 64, 0, 0.2), rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.5)), url("../img/rgbg5.png")));
+        @include backgroundCoverImageWithFilter((linear-gradient(to right,
+        rgba(0, 255, 150, 1.0), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("../img/cover.png")), multiply);
         background-attachment: fixed;
-        @include anim(fadeIn, 1s, 2s);
     }
 }
 
 @media screen and (min-width: 0px) {
     .my-hero-inside {
-        @include flexToCenter(100vh, column);
+        @include flexToCenter(90vh, column);
         justify-content: flex-end;
         padding-bottom: 5rem;
         background-blend-mode: darken;
@@ -202,7 +197,7 @@ a {
 
 @media screen and (min-width: 767px) {
     .my-hero-inside {
-        @include flexToCenter(100vh, column);
+        @include flexToCenter(90vh, column);
         justify-content: center;
         align-items: left;
         padding-bottom: 0rem;
@@ -231,10 +226,6 @@ a {
             margin-bottom: 0.75vw;
         }
     }
-}
-
-.heroScrollDownAnim {
-    @include anim(fadeInDown, 3s, 5s);
 }
 
 .removeIfMob {
@@ -369,7 +360,7 @@ ul.timeline > li:before {
 @media screen and (min-width: 0px) {
     .youtubeCover
     {
-        @include backgroundCoverImage((linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1)), linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1)), linear-gradient(to top, rgb(0,255,0), rgb(0,255,0) 50%, rgb(255,0,0) 50.01%)));
+        @include backgroundCoverImage((linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1)), linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1)), linear-gradient(to top, rgb(0,60,0), rgb(0,60,0) 50%, rgb(60,0,0) 50.01%)));
 
         .youtubeHeading {
             display: none;
@@ -399,7 +390,7 @@ ul.timeline > li:before {
 @media screen and (min-width: 767px) {
     .youtubeCover
     {
-        @include backgroundCoverImage((linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1)), linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1)), linear-gradient(to left, rgb(0,255,0), rgb(0,255,0) 50%, rgb(255,0,0) 50.01%)));
+        @include backgroundCoverImage((linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1)), linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1)), linear-gradient(to left, rgb(0,60,0), rgb(0,60,0) 50%, rgb(60,0,0) 50.01%)));
 
         .youtubeHeading {
             display: block;

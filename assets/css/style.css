@@ -67,133 +67,86 @@ a:hover {
 }
 
 .iconSize {
-  width: 3.4rem;
-  height: 3.4rem;
+  width: 2.8rem;
+  height: 2.8rem;
 }
 
 .btnIconSize {
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 1.0rem;
+  height: 1.0rem;
 }
 
 .container-fluid {
   border-radius: 0px 0px 0px 0px;
 }
 
-.loadingDisplay {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  padding: 0;
-  margin: 0;
-  font-family: "Nunito";
-  font-size: 1.4rem;
-  font-weight: 700;
-  padding-left: auto;
-  padding-right: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-animation-name: fadeOut;
-          animation-name: fadeOut;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
 @media screen and (min-width: 0px) {
   .linkHoverAnim {
     padding: 4px;
     margin: 4px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.8);
     -webkit-transition: 0.25s;
     transition: 0.25s;
   }
   .callToActionEmailIcon {
-    padding: 8px;
+    padding: 6px;
     background-color: white;
     color: black;
-    width: 4rem;
-    height: 4rem;
+    width: 2.8rem;
+    height: 2.8rem;
   }
 }
 
 @media screen and (min-width: 767px) {
   .linkHoverAnim {
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.15);
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.75);
     -webkit-transition: 0.25s;
     transition: 0.25s;
   }
   .linkHoverAnim:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: black;
     font-size: 125%;
-    padding: 5px;
+    padding: 4px;
   }
   .callToActionEmailIcon {
-    padding: 15px;
+    padding: 10px;
     background-color: white;
     color: black;
-    width: 4rem;
-    height: 4rem;
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+  .callToActionEmailIcon:hover {
+    background-color: white;
+    font-size: 125%;
+    padding: 4px;
   }
 }
 
 .my-hero {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 255, 0, 0)), color-stop(rgba(0, 64, 0, 0.5)), color-stop(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.9))), url("../img/rgbg6.png");
-  background-image: linear-gradient(to left, rgba(0, 255, 0, 0), rgba(0, 64, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../img/rgbg6.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(#00ff96), color-stop(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../img/coverMobile.png");
+  background-image: linear-gradient(to right, #00ff96, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/coverMobile.png");
+  background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
 }
 
 @media screen and (min-width: 767px) {
   .my-hero {
-    background-image: url("../img/me1.png"), -webkit-gradient(linear, right top, left top, from(rgba(0, 255, 0, 0.05)), color-stop(rgba(0, 64, 0, 0.2)), color-stop(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.5))), url("../img/rgbg5.png");
-    background-image: url("../img/me1.png"), linear-gradient(to left, rgba(0, 255, 0, 0.05), rgba(0, 64, 0, 0.2), rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.5)), url("../img/rgbg5.png");
+    background-image: -webkit-gradient(linear, left top, right top, from(#00ff96), color-stop(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../img/cover.png");
+    background-image: linear-gradient(to right, #00ff96, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/cover.png");
+    background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
   }
 }
 
 @media screen and (min-width: 0px) {
   .my-hero-inside {
-    height: 100vh;
+    height: 90vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -258,7 +211,7 @@ a:hover {
 
 @media screen and (min-width: 767px) {
   .my-hero-inside {
-    height: 100vh;
+    height: 90vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -318,17 +271,6 @@ a:hover {
     margin-top: 0.75vw;
     margin-bottom: 0.75vw;
   }
-}
-
-.heroScrollDownAnim {
-  -webkit-animation-name: fadeInDown;
-          animation-name: fadeInDown;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
 }
 
 .removeIfMob {
@@ -478,8 +420,8 @@ ul.timeline > li:before {
 
 @media screen and (min-width: 0px) {
   .youtubeCover {
-    background-image: -webkit-gradient(linear, right top, left top, from(black), color-stop(rgba(0, 0, 0, 0)), to(black)), -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0)), color-stop(black), color-stop(rgba(0, 0, 0, 0)), to(black)), -webkit-gradient(linear, left bottom, left top, from(lime), color-stop(50%, lime), color-stop(50.01%, red));
-    background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0), black), linear-gradient(to top, black, rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0), black), linear-gradient(to top, lime, lime 50%, red 50.01%);
+    background-image: -webkit-gradient(linear, right top, left top, from(black), color-stop(rgba(0, 0, 0, 0)), to(black)), -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0)), color-stop(black), color-stop(rgba(0, 0, 0, 0)), to(black)), -webkit-gradient(linear, left bottom, left top, from(#003c00), color-stop(50%, #003c00), color-stop(50.01%, #3c0000));
+    background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0), black), linear-gradient(to top, black, rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0), black), linear-gradient(to top, #003c00, #003c00 50%, #3c0000 50.01%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -506,8 +448,8 @@ ul.timeline > li:before {
 
 @media screen and (min-width: 767px) {
   .youtubeCover {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0)), to(black)), -webkit-gradient(linear, right top, left top, from(black), color-stop(rgba(0, 0, 0, 0)), color-stop(black), color-stop(rgba(0, 0, 0, 0)), to(black)), -webkit-gradient(linear, right top, left top, from(lime), color-stop(50%, lime), color-stop(50.01%, red));
-    background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0), black), linear-gradient(to left, black, rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0), black), linear-gradient(to left, lime, lime 50%, red 50.01%);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0)), to(black)), -webkit-gradient(linear, right top, left top, from(black), color-stop(rgba(0, 0, 0, 0)), color-stop(black), color-stop(rgba(0, 0, 0, 0)), to(black)), -webkit-gradient(linear, right top, left top, from(#003c00), color-stop(50%, #003c00), color-stop(50.01%, #3c0000));
+    background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0), black), linear-gradient(to left, black, rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0), black), linear-gradient(to left, #003c00, #003c00 50%, #3c0000 50.01%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
