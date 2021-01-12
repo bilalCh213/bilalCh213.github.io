@@ -42,7 +42,7 @@ $buttonBorderColor: rgba(250, 255, 245, 0.5);
 }
 
 .flexToCenterFullScreenColumn {
-    @include flexToCenter(100vh, column);
+    @include flexToCenter(90vh, column);
 }
 
 @mixin mainFont() {
@@ -55,12 +55,14 @@ $buttonBorderColor: rgba(250, 255, 245, 0.5);
 .darkText { color: $mainDarkColor; }
 
 @mixin anim($anim, $dur, $del) {
-    
     animation-name: $anim;
     animation-duration: $dur;
     animation-delay: $del;
     animation-fill-mode: both;
-    
+}
+
+.fadeInDown1sDelay {
+    @include anim(fadeInDown, 2s, 1s);
 }
 
 html {
@@ -179,14 +181,14 @@ a {
             font-size: $mainHeadingFontSize - ($mobileFontDifference*2);
             margin: 0;
             color: $whiteColor;
-            @include anim(fadeInDown, 1.5s, 2s);
+            @include anim(fadeInDown, 1.0s, 1.0s);
         }
         .subtitleHeading {
             @include mainFont();
             font-size: $subtitleHeadingFontSize - $mobileFontDifference;;
             margin: 0;
             color: $whiteColor;
-            @include anim(fadeInUp, 1.5s, 2s);
+            @include anim(fadeInUp, 1.0s, 1.0s);
         }
         .headingDivider {
             margin-top: 0.75vw;
@@ -212,14 +214,14 @@ a {
             font-size: $mainHeadingFontSize;
             margin: 0;
             color: $whiteColor;
-            @include anim(fadeInDown, 1.5s, 2s);
+            @include anim(fadeInDown, 1.0s, 1.0s);
         }
         .subtitleHeading {
             @include mainFont();
             font-size: $subtitleHeadingFontSize;
             margin: 0;
             color: $whiteColor;
-            @include anim(fadeInUp, 1.5s, 2s);
+            @include anim(fadeInUp, 1.0s, 1.0s);
         }
         .headingDivider {
             margin-top: 0.75vw;
@@ -373,16 +375,16 @@ ul.timeline > li:before {
         }
 
         .youtubeFrameSize {
-            width: 320px;
-            height: 180px;
+            width: 256px;
+            height: 144px;
         }
 
         .urduyt {
-            padding-bottom: 1rem;
+            padding-bottom: 0.5rem;
         }
 
         .engyt {
-            padding-top: 1rem;
+            padding-top: 0.5rem;
         }
     }
 }
@@ -423,8 +425,10 @@ ul.timeline > li:before {
 
 .colerrCover
 {
-    @include backgroundCoverImage(
-    url("https://img.itch.zone/aW1nLzI5MDIxOTgucG5n/original/TA4FKY.png"));
+    //@include backgroundCoverImage(
+    //url("https://img.itch.zone/aW1nLzI5MDIxOTgucG5n/original/TA4FKY.png"));
+
+    @include backgroundCoverImage(linear-gradient(to right, black, #404040, #808080, black));
 
     .gamePanelBox {
         color: $whiteColor;
@@ -447,8 +451,10 @@ ul.timeline > li:before {
 
 .mysticchambersCover
 {
-    @include backgroundCoverImage(
-    url("https://img.itch.zone/aW1nLzM3NTU4MTEuZ2lm/original/HjhKNZ.gif"));
+    //@include backgroundCoverImage(
+    //url("https://img.itch.zone/aW1nLzM3NTU4MTEuZ2lm/original/HjhKNZ.gif"));
+
+    @include backgroundCoverImage(linear-gradient(to right, black, #990088, #880044, black));
 
     .gamePanelBox {
         color: $whiteColor;
@@ -471,8 +477,10 @@ ul.timeline > li:before {
 
 .antonsCover
 {
-    @include backgroundCoverImage(
-    url("https://img.itch.zone/aW1hZ2UvMzg3NjIyLzMwNDU4NTguZ2lm/original/Pp3ROm.gif"));
+    //@include backgroundCoverImage(
+    //url("https://img.itch.zone/aW1hZ2UvMzg3NjIyLzMwNDU4NTguZ2lm/original/Pp3ROm.gif"));
+
+    @include backgroundCoverImage(linear-gradient(to right, black, #004488, #440888, black));
 
     .gamePanelBox {
         color: $whiteColor;
@@ -495,8 +503,10 @@ ul.timeline > li:before {
 
 .nickoftimeCover
 {
-    @include backgroundCoverImage(
-    url("https://bacprogramming.files.wordpress.com/2019/10/story2twitter.gif?w=672&zoom=2"));
+    //@include backgroundCoverImage(
+    //url("https://bacprogramming.files.wordpress.com/2019/10/story2twitter.gif?w=672&zoom=2"));
+
+    @include backgroundCoverImage(linear-gradient(to right, black, #884400, #660066, black));
 
     .gamePanelBox {
         color: $whiteColor;
@@ -519,8 +529,10 @@ ul.timeline > li:before {
 
 .leverageCover
 {
-    @include backgroundCoverImage(
-    url("https://img.itch.zone/aW1hZ2UvNDk1MzEzLzI1NjQzMjQuZ2lm/original/BaR86T.gif"));
+    //@include backgroundCoverImage(
+    //url("https://img.itch.zone/aW1hZ2UvNDk1MzEzLzI1NjQzMjQuZ2lm/original/BaR86T.gif"));
+
+    @include backgroundCoverImage(linear-gradient(to right, black, #448888, #116644, black));
 
     .gamePanelBox {
         color: $whiteColor;
@@ -543,8 +555,10 @@ ul.timeline > li:before {
 
 .bacStudiosCover
 {
-    @include backgroundCoverImage((linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0.9), rgba(0,0,0,0.7)),
-    url("https://img.itch.zone/aW1nLzI4MjgzNTMucG5n/original/LgAKA6.png")));
+    //@include backgroundCoverImage((linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0.9), rgba(0,0,0,0.7)),
+    //url("https://img.itch.zone/aW1nLzI4MjgzNTMucG5n/original/LgAKA6.png")));
+
+    @include backgroundCoverImage(linear-gradient(to bottom, rgb(30, 0, 0), rgb(0, 30, 0), black));
 
     .gamePanelBox {
         color: rgb(0, 255, 0);
@@ -604,100 +618,112 @@ ul.timeline > li:before {
 .nethercardKingdomCover
 {
     @include backgroundCoverImage((linear-gradient(to top,
-    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0)),
+    rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
     url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/315x250%23cm/eg2s7z.gif")));
     transition: 0.25s;
+    /*
     &:hover {
         color: $buttonBorderColor;
         @include backgroundCoverImage((linear-gradient(to top,
         rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
         url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/original/y61%2FLZ.gif")));
     }
+    */
 }
 
 .ghostRustlersCover
 {
     @include backgroundCoverImage((linear-gradient(to top,
-    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0)),
+    rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
     url("https://img.itch.zone/aW1nLzI2NTA1NjYuZ2lm/315x250%23cm/9jk2g4.gif")));
+    /*
     &:hover {
         color: $buttonBorderColor;
         @include backgroundCoverImage((linear-gradient(to top,
         rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
         url("https://img.itch.zone/aW1nLzI2NTA1NjYuZ2lm/original/l9jsIz.gif")));
     }
+    */
 }
 
 .exitTheShadowCover
 {
     @include backgroundCoverImage((linear-gradient(to top,
-    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0)),
+    rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
     url("https://img.itch.zone/aW1nLzIyMTUxNzUuZ2lm/315x250%23cm/xbQjje.gif")));
+    /*
     &:hover {
         color: $buttonBorderColor;
         @include backgroundCoverImage((linear-gradient(to top,
         rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
         url("https://img.itch.zone/aW1nLzIyMTUxNzUuZ2lm/original/PccvAh.gif")));
     }
+    */
 }
 
 .alienOverrunCover
 {
     @include backgroundCoverImage((linear-gradient(to top,
-    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0)),
+    rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
     url("https://img.itch.zone/aW1nLzIxNjMzOTMuZ2lm/315x250%23cm/l5Mn2S.gif")));
+    /*
     &:hover {
         color: $buttonBorderColor;
         @include backgroundCoverImage((linear-gradient(to top,
         rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
         url("https://img.itch.zone/aW1nLzIxNjMzOTMuZ2lm/original/xIo8Ga.gif")));
     }
+    */
 }
 
 .delvCover
 {
     @include backgroundCoverImage((linear-gradient(to top,
-    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0)),
+    rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
     url("https://img.itch.zone/aW1nLzIwNTQ5NzUuZ2lm/315x250%23cm/TE7NLp.gif")));
+    /*
     &:hover {
         color: $buttonBorderColor;
         @include backgroundCoverImage((linear-gradient(to top,
         rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
         url("https://img.itch.zone/aW1nLzIwNTQ5NzUuZ2lm/original/m%2FTIZA.gif")));
     }
+    */
 }
 
 .wildDriversCover
 {
     @include backgroundCoverImage((linear-gradient(to top,
-    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0)),
+    rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
     url("https://img.itch.zone/aW1nLzIwMzUzMDMuZ2lm/315x250%23cm/5re7Di.gif")));
+    /*
     &:hover {
         color: $buttonBorderColor;
         @include backgroundCoverImage((linear-gradient(to top,
         rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
         url("https://img.itch.zone/aW1nLzIwMzUzMDMuZ2lm/original/OjKhZV.gif")));
     }
+    */
 }
 
 .whisperdriftCover
 {
     @include backgroundCoverImage((linear-gradient(to top,
-    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0)),
+    rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
     url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/315x250%23cm/RualvC.gif")));
+    /*
     &:hover {
         color: $buttonBorderColor;
         @include backgroundCoverImage((linear-gradient(to top,
         rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
         url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/original/H%2FUfjI.gif")));
     }
+    */
 }
 
 .endSectionCover
 {
-    @include backgroundCoverImage((linear-gradient(to top,
-    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
-    url("../img/rgbg8.png")));
+    @include backgroundCoverImage((linear-gradient(to bottom, #dddddd, #bbbbbb, #dddddd)));
 }
 
 @media screen and (max-width: 767px) {

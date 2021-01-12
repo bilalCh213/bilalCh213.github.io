@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap");
 .flexToCenterFullScreenColumn {
-  height: 100vh;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,6 +35,17 @@
 
 .darkText {
   color: #0a280a;
+}
+
+.fadeInDown1sDelay {
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 html {
@@ -182,10 +193,10 @@ a:hover {
     color: #fafff5;
     -webkit-animation-name: fadeInDown;
             animation-name: fadeInDown;
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
   }
@@ -196,10 +207,10 @@ a:hover {
     color: #fafff5;
     -webkit-animation-name: fadeInUp;
             animation-name: fadeInUp;
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
   }
@@ -246,10 +257,10 @@ a:hover {
     color: #fafff5;
     -webkit-animation-name: fadeInDown;
             animation-name: fadeInDown;
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
   }
@@ -260,10 +271,10 @@ a:hover {
     color: #fafff5;
     -webkit-animation-name: fadeInUp;
             animation-name: fadeInUp;
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
   }
@@ -435,14 +446,14 @@ ul.timeline > li:before {
     padding: 0;
   }
   .youtubeCover .youtubeFrameSize {
-    width: 320px;
-    height: 180px;
+    width: 256px;
+    height: 144px;
   }
   .youtubeCover .urduyt {
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
   .youtubeCover .engyt {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
   }
 }
 
@@ -479,7 +490,8 @@ ul.timeline > li:before {
 }
 
 .colerrCover {
-  background-image: url("https://img.itch.zone/aW1nLzI5MDIxOTgucG5n/original/TA4FKY.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#404040), color-stop(#808080), to(black));
+  background-image: linear-gradient(to right, black, #404040, #808080, black);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -504,7 +516,8 @@ ul.timeline > li:before {
 }
 
 .mysticchambersCover {
-  background-image: url("https://img.itch.zone/aW1nLzM3NTU4MTEuZ2lm/original/HjhKNZ.gif");
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#990088), color-stop(#880044), to(black));
+  background-image: linear-gradient(to right, black, #990088, #880044, black);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -529,7 +542,8 @@ ul.timeline > li:before {
 }
 
 .antonsCover {
-  background-image: url("https://img.itch.zone/aW1hZ2UvMzg3NjIyLzMwNDU4NTguZ2lm/original/Pp3ROm.gif");
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#004488), color-stop(#440888), to(black));
+  background-image: linear-gradient(to right, black, #004488, #440888, black);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -554,7 +568,8 @@ ul.timeline > li:before {
 }
 
 .nickoftimeCover {
-  background-image: url("https://bacprogramming.files.wordpress.com/2019/10/story2twitter.gif?w=672&zoom=2");
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#884400), color-stop(#660066), to(black));
+  background-image: linear-gradient(to right, black, #884400, #660066, black);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -579,7 +594,8 @@ ul.timeline > li:before {
 }
 
 .leverageCover {
-  background-image: url("https://img.itch.zone/aW1hZ2UvNDk1MzEzLzI1NjQzMjQuZ2lm/original/BaR86T.gif");
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#448888), color-stop(#116644), to(black));
+  background-image: linear-gradient(to right, black, #448888, #116644, black);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -604,8 +620,8 @@ ul.timeline > li:before {
 }
 
 .bacStudiosCover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.7))), url("https://img.itch.zone/aW1nLzI4MjgzNTMucG5n/original/LgAKA6.png");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("https://img.itch.zone/aW1nLzI4MjgzNTMucG5n/original/LgAKA6.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1e0000), color-stop(#001e00), to(black));
+  background-image: linear-gradient(to bottom, #1e0000, #001e00, black);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -668,129 +684,122 @@ ul.timeline > li:before {
 }
 
 .nethercardKingdomCover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.8)), to(black)), url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/315x250%23cm/eg2s7z.gif");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), black), url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/315x250%23cm/eg2s7z.gif");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/315x250%23cm/eg2s7z.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/315x250%23cm/eg2s7z.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-transition: 0.25s;
   transition: 0.25s;
-}
-
-.nethercardKingdomCover:hover {
-  color: rgba(250, 255, 245, 0.5);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.25))), url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/original/y61%2FLZ.gif");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)), url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/original/y61%2FLZ.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  /*
+    &:hover {
+        color: $buttonBorderColor;
+        @include backgroundCoverImage((linear-gradient(to top,
+        rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
+        url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/original/y61%2FLZ.gif")));
+    }
+    */
 }
 
 .ghostRustlersCover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.8)), to(black)), url("https://img.itch.zone/aW1nLzI2NTA1NjYuZ2lm/315x250%23cm/9jk2g4.gif");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), black), url("https://img.itch.zone/aW1nLzI2NTA1NjYuZ2lm/315x250%23cm/9jk2g4.gif");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1nLzI2NTA1NjYuZ2lm/315x250%23cm/9jk2g4.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1nLzI2NTA1NjYuZ2lm/315x250%23cm/9jk2g4.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.ghostRustlersCover:hover {
-  color: rgba(250, 255, 245, 0.5);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.25))), url("https://img.itch.zone/aW1nLzI2NTA1NjYuZ2lm/original/l9jsIz.gif");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)), url("https://img.itch.zone/aW1nLzI2NTA1NjYuZ2lm/original/l9jsIz.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  /*
+    &:hover {
+        color: $buttonBorderColor;
+        @include backgroundCoverImage((linear-gradient(to top,
+        rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
+        url("https://img.itch.zone/aW1nLzI2NTA1NjYuZ2lm/original/l9jsIz.gif")));
+    }
+    */
 }
 
 .exitTheShadowCover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.8)), to(black)), url("https://img.itch.zone/aW1nLzIyMTUxNzUuZ2lm/315x250%23cm/xbQjje.gif");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), black), url("https://img.itch.zone/aW1nLzIyMTUxNzUuZ2lm/315x250%23cm/xbQjje.gif");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1nLzIyMTUxNzUuZ2lm/315x250%23cm/xbQjje.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1nLzIyMTUxNzUuZ2lm/315x250%23cm/xbQjje.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.exitTheShadowCover:hover {
-  color: rgba(250, 255, 245, 0.5);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.25))), url("https://img.itch.zone/aW1nLzIyMTUxNzUuZ2lm/original/PccvAh.gif");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)), url("https://img.itch.zone/aW1nLzIyMTUxNzUuZ2lm/original/PccvAh.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  /*
+    &:hover {
+        color: $buttonBorderColor;
+        @include backgroundCoverImage((linear-gradient(to top,
+        rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
+        url("https://img.itch.zone/aW1nLzIyMTUxNzUuZ2lm/original/PccvAh.gif")));
+    }
+    */
 }
 
 .alienOverrunCover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.8)), to(black)), url("https://img.itch.zone/aW1nLzIxNjMzOTMuZ2lm/315x250%23cm/l5Mn2S.gif");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), black), url("https://img.itch.zone/aW1nLzIxNjMzOTMuZ2lm/315x250%23cm/l5Mn2S.gif");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1nLzIxNjMzOTMuZ2lm/315x250%23cm/l5Mn2S.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1nLzIxNjMzOTMuZ2lm/315x250%23cm/l5Mn2S.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.alienOverrunCover:hover {
-  color: rgba(250, 255, 245, 0.5);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.25))), url("https://img.itch.zone/aW1nLzIxNjMzOTMuZ2lm/original/xIo8Ga.gif");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)), url("https://img.itch.zone/aW1nLzIxNjMzOTMuZ2lm/original/xIo8Ga.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  /*
+    &:hover {
+        color: $buttonBorderColor;
+        @include backgroundCoverImage((linear-gradient(to top,
+        rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
+        url("https://img.itch.zone/aW1nLzIxNjMzOTMuZ2lm/original/xIo8Ga.gif")));
+    }
+    */
 }
 
 .delvCover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.8)), to(black)), url("https://img.itch.zone/aW1nLzIwNTQ5NzUuZ2lm/315x250%23cm/TE7NLp.gif");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), black), url("https://img.itch.zone/aW1nLzIwNTQ5NzUuZ2lm/315x250%23cm/TE7NLp.gif");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1nLzIwNTQ5NzUuZ2lm/315x250%23cm/TE7NLp.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1nLzIwNTQ5NzUuZ2lm/315x250%23cm/TE7NLp.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.delvCover:hover {
-  color: rgba(250, 255, 245, 0.5);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.25))), url("https://img.itch.zone/aW1nLzIwNTQ5NzUuZ2lm/original/m%2FTIZA.gif");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)), url("https://img.itch.zone/aW1nLzIwNTQ5NzUuZ2lm/original/m%2FTIZA.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  /*
+    &:hover {
+        color: $buttonBorderColor;
+        @include backgroundCoverImage((linear-gradient(to top,
+        rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
+        url("https://img.itch.zone/aW1nLzIwNTQ5NzUuZ2lm/original/m%2FTIZA.gif")));
+    }
+    */
 }
 
 .wildDriversCover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.8)), to(black)), url("https://img.itch.zone/aW1nLzIwMzUzMDMuZ2lm/315x250%23cm/5re7Di.gif");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), black), url("https://img.itch.zone/aW1nLzIwMzUzMDMuZ2lm/315x250%23cm/5re7Di.gif");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1nLzIwMzUzMDMuZ2lm/315x250%23cm/5re7Di.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1nLzIwMzUzMDMuZ2lm/315x250%23cm/5re7Di.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.wildDriversCover:hover {
-  color: rgba(250, 255, 245, 0.5);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.25))), url("https://img.itch.zone/aW1nLzIwMzUzMDMuZ2lm/original/OjKhZV.gif");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)), url("https://img.itch.zone/aW1nLzIwMzUzMDMuZ2lm/original/OjKhZV.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  /*
+    &:hover {
+        color: $buttonBorderColor;
+        @include backgroundCoverImage((linear-gradient(to top,
+        rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
+        url("https://img.itch.zone/aW1nLzIwMzUzMDMuZ2lm/original/OjKhZV.gif")));
+    }
+    */
 }
 
 .whisperdriftCover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.8)), to(black)), url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/315x250%23cm/RualvC.gif");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), black), url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/315x250%23cm/RualvC.gif");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/315x250%23cm/RualvC.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/315x250%23cm/RualvC.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.whisperdriftCover:hover {
-  color: rgba(250, 255, 245, 0.5);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.25))), url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/original/H%2FUfjI.gif");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)), url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/original/H%2FUfjI.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  /*
+    &:hover {
+        color: $buttonBorderColor;
+        @include backgroundCoverImage((linear-gradient(to top,
+        rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
+        url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/original/H%2FUfjI.gif")));
+    }
+    */
 }
 
 .endSectionCover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.8)), color-stop(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.4))), url("../img/rgbg8.png");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/rgbg8.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), color-stop(#bbbbbb), to(#dddddd));
+  background-image: linear-gradient(to bottom, #dddddd, #bbbbbb, #dddddd);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
