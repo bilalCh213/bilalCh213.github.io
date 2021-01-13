@@ -418,6 +418,15 @@ ul.timeline > li:before {
   }
 }
 
+.timelineSubheading {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.timelineSubheading:hover {
+  color: lightgreen;
+}
+
 .mainBtn {
   color: #fafff5;
   background-color: #0a280a;
@@ -487,6 +496,32 @@ ul.timeline > li:before {
   .youtubeCover .engyt {
     padding-top: 0rem;
   }
+}
+
+.withoutMilesCover {
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#07744d), color-stop(#00aa66), to(black));
+  background-image: linear-gradient(to right, black, #07744d, #00aa66, black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.withoutMilesCover .gamePanelBox {
+  color: #fafff5;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(31, 0, 21, 0.7);
+}
+
+.withoutMilesCover .mainBtn {
+  color: #fafff5;
+  background-color: #00aa66;
+  border-color: rgba(250, 255, 245, 0.5);
+}
+
+.withoutMilesCover .mainBtn:hover {
+  color: white;
+  background-color: black;
 }
 
 .colerrCover {
@@ -689,8 +724,6 @@ ul.timeline > li:before {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
   /*
     &:hover {
         color: $buttonBorderColor;

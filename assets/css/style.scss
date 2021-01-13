@@ -346,6 +346,13 @@ ul.timeline > li:before {
     }
 }
 
+.timelineSubheading {
+    transition: 0.25s;
+    &:hover {
+        color: lightgreen;
+    }
+}
+
 .mainBtn {
     color: $whiteColor;
     background-color: $mainDarkColor;
@@ -356,8 +363,6 @@ ul.timeline > li:before {
         background-color: black;
     }
 }
-
-
 
 @media screen and (min-width: 0px) {
     .youtubeCover
@@ -419,6 +424,32 @@ ul.timeline > li:before {
 
         .engyt {
             padding-top: 0rem;
+        }
+    }
+}
+
+.withoutMilesCover
+{
+    //@include backgroundCoverImage(
+    //url("https://img.itch.zone/aW1nLzM3NTU4MTEuZ2lm/original/HjhKNZ.gif"));
+
+    @include backgroundCoverImage(linear-gradient(to right, black, #07744d, #00aa66, black));
+
+    .gamePanelBox {
+        color: $whiteColor;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(31, 0, 21, 0.7);
+    }
+
+    .mainBtn {
+        color: $whiteColor;
+        background-color: #00aa66;
+        border-color: $buttonBorderColor;
+
+        &:hover {
+            color: white;
+            background-color: black;
         }
     }
 }
@@ -620,7 +651,6 @@ ul.timeline > li:before {
     @include backgroundCoverImage((linear-gradient(to top,
     rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
     url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/315x250%23cm/eg2s7z.gif")));
-    transition: 0.25s;
     /*
     &:hover {
         color: $buttonBorderColor;
