@@ -428,6 +428,32 @@ ul.timeline > li:before {
     }
 }
 
+.hoverTacticsCover
+{
+    //@include backgroundCoverImage(
+    //url("https://img.itch.zone/aW1nLzM3NTU4MTEuZ2lm/original/HjhKNZ.gif"));
+
+    @include backgroundCoverImage(linear-gradient(to right, black, #ff6600, #4400ff, black));
+
+    .gamePanelBox {
+        color: $whiteColor;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(31, 0, 21, 0.7);
+    }
+
+    .mainBtn {
+        color: $whiteColor;
+        background-color: rgb(53, 0, 200);
+        border-color: $buttonBorderColor;
+
+        &:hover {
+            color: white;
+            background-color: black;
+        }
+    }
+}
+
 .withoutMilesCover
 {
     //@include backgroundCoverImage(

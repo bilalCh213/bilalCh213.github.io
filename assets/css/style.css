@@ -498,6 +498,32 @@ ul.timeline > li:before {
   }
 }
 
+.hoverTacticsCover {
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#ff6600), color-stop(#4400ff), to(black));
+  background-image: linear-gradient(to right, black, #ff6600, #4400ff, black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hoverTacticsCover .gamePanelBox {
+  color: #fafff5;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(31, 0, 21, 0.7);
+}
+
+.hoverTacticsCover .mainBtn {
+  color: #fafff5;
+  background-color: #3500c8;
+  border-color: rgba(250, 255, 245, 0.5);
+}
+
+.hoverTacticsCover .mainBtn:hover {
+  color: white;
+  background-color: black;
+}
+
 .withoutMilesCover {
   background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#07744d), color-stop(#00aa66), to(black));
   background-image: linear-gradient(to right, black, #07744d, #00aa66, black);
